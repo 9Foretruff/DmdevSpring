@@ -17,6 +17,5 @@ public class ApplicationRunner {
 //        var companyRepository = container.get(CompanyRepository.class);
 
         var userService = container.get(UserService.class);
-
     }
 }
