@@ -1,21 +1,13 @@
 package com.foretruff.spring;
 
-import com.foretruff.spring.ioc.Container;
-import com.foretruff.spring.service.UserService;
+import com.foretruff.spring.database.pool.ConnectionPool;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ApplicationRunner {
     public static void main(String[] args) {
-        var container = new Container();
-
-//        var connectionPool = new ConnectionPool();
-//        var userRepository = new UserRepository(connectionPool);
-//        var companyRepository = new CompanyRepository(connectionPool);
-//        var userService = new UserService(userRepository, companyRepository);
-
-//        var connectionPool = container.get(ConnectionPool.class);
-//        var userRepository = container.get(UserRepository.class);
-//        var companyRepository = container.get(CompanyRepository.class);
-
-        var userService = container.get(UserService.class);
+        var context = new ClassPathXmlApplicationContext("application.xml");
+//      clazz -> Map<String,Object>
+        var connectionPool = context.getBean("pool1", ConnectionPool.class);
+        System.out.println(connectionPool);
     }
 }
