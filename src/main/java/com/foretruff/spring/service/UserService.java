@@ -11,4 +11,5 @@ public class UserService {
         this.userRepository = userRepository;
         this.companyRepository = companyRepository;
     }
+
 }
