@@ -19,12 +19,18 @@
             </list>
         </constructor-arg>
         <constructor-arg name="properties" type="java.util.Map">
-            <map>
-                <entry key="url" value="postgresUrl"/>
-                <entry key="password" value="2006"/>
-                <entry key="driver" value-ref="driver"/>
-            </map>
+            <!--            <map>-->
+            <!--                <entry key="url" value="postgresUrl"/>-->
+            <!--                <entry key="password" value="2006"/>-->
+            <!--                <entry key="driver" value-ref="driver"/>-->
+            <!--            </map>-->
+            <null/>
         </constructor-arg>
+        <property name="properties">
+            <map>
+                <entry key="some value" value="777"/>
+            </map>
+        </property>
     </bean>
     <!--    <bean id="pool2" name="p4,p5,p6" class="com.foretruff.spring.database.pool.ConnectionPool"/>-->
 
