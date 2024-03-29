@@ -1,9 +1,11 @@
 package com.foretruff.spring.database.pool;
 
+import org.springframework.beans.factory.InitializingBean;
+
 import java.util.List;
 import java.util.Map;
 
-public class ConnectionPool {
+public class ConnectionPool implements InitializingBean {
     private final String username;
     private final Integer poolSize;
     private final List<Object> args;
@@ -21,5 +23,18 @@ public class ConnectionPool {
         this.poolSize = poolSize;
         this.args = args;
         this.properties = properties;
+    }
+
+    private void init() {
+        System.out.println("Init connection pool");
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("properties set");
+    }
+
+    private void destroy() {
+        System.out.println("clean connection pool");
     }
 }
