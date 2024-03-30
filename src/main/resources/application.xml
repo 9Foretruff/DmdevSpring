@@ -11,6 +11,7 @@
     <context:property-placeholder location="classpath:application.properties"/>
 
     <bean class="com.foretruff.spring.bpp.InjectBeanPostProcessor"/>
+    <bean class="com.foretruff.spring.bpp.TransactionBeanPostProcessor"/>
 
     <!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
 
