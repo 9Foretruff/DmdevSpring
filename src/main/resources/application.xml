@@ -13,7 +13,8 @@
     <!--        <property name="locations" value="classpath:application.properties"/>-->
     <!--    </bean>-->
 
-
+    <bean class="com.foretruff.spring.bfpp.LogBeanFactoryPostProcessor"/>
+    <bean class="com.foretruff.spring.bfpp.VerifyPropertyBeanFactoryPostProcessor"/>
 
     <bean id="driver" class="java.lang.String">
         <constructor-arg type="java.lang.String" value="${db.driver}"/>
@@ -22,7 +23,7 @@
     <bean id="pool1" name="p1,p2,p3" class="com.foretruff.spring.database.pool.ConnectionPool" scope="singleton"
           init-method="init"
           destroy-method="destroy">
-        <constructor-arg name="username" type="java.lang.String" value="${db.username}"  index="0"/>
+        <constructor-arg name="username" type="java.lang.String" value="${db.username}" index="0"/>
         <constructor-arg name="poolSize" type="java.lang.Integer" value="${db.pool.size}"/>
         <constructor-arg name="args" type="java.util.List">
             <list>
