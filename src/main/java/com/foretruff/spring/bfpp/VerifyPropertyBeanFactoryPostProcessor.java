@@ -15,4 +15,5 @@ public class VerifyPropertyBeanFactoryPostProcessor implements BeanFactoryPostPr
     public int getOrder() {
         return 0;
     }
+
 }

@@ -16,4 +16,5 @@ public class LogBeanFactoryPostProcessor implements BeanFactoryPostProcessor, Pr
     public int getOrder() {
         return Ordered.HIGHEST_PRECEDENCE;
     }
+
 }

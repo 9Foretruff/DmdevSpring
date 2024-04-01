@@ -36,7 +36,6 @@
                 <value>hello=value</value>
                 <ref bean="driver"/>
             </list>
-
         </constructor-arg>
         <constructor-arg name="properties" type="java.util.Map">
             <!--            <map>-->
