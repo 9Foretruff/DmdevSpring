@@ -1,7 +1,6 @@
 package com.foretruff.spring;
 
 import com.foretruff.spring.database.pool.ConnectionPool;
-import com.foretruff.spring.database.repository.CompanyRepository;
 import com.foretruff.spring.database.repository.CrudRepository;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

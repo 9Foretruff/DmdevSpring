@@ -1,5 +1,6 @@
 package com.foretruff.spring.database.repository;
 
+import com.foretruff.spring.bpp.Auditing;
 import com.foretruff.spring.bpp.InjectBean;
 import com.foretruff.spring.bpp.Transaction;
 import com.foretruff.spring.database.entity.Company;
@@ -9,6 +10,7 @@ import jakarta.annotation.PostConstruct;
 import java.util.Optional;
 
 @Transaction
+@Auditing
 public class CompanyRepository implements CrudRepository<Integer, Company> {
     @InjectBean
     private ConnectionPool connectionPool;
