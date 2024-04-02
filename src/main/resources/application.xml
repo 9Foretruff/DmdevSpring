@@ -27,6 +27,7 @@
         <constructor-arg type="java.lang.String" value="${db.driver}"/>
     </bean>
 
+    <bean id="pool2" class="com.foretruff.spring.database.pool.ConnectionPool"/>
     <bean id="pool1" name="p1,p2,p3" class="com.foretruff.spring.database.pool.ConnectionPool">
         <constructor-arg name="username" type="java.lang.String" value="${db.username}" index="0"/>
         <constructor-arg name="poolSize" type="java.lang.Integer" value="${db.pool.size}"/>

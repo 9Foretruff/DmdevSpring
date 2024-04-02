@@ -1,22 +1,33 @@
 package com.foretruff.spring.database.repository;
 
 import com.foretruff.spring.bpp.Auditing;
-import com.foretruff.spring.bpp.InjectBean;
 import com.foretruff.spring.bpp.Transaction;
 import com.foretruff.spring.database.entity.Company;
 import com.foretruff.spring.database.pool.ConnectionPool;
 import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
+import java.util.List;
 import java.util.Optional;
 
 @Transaction
 @Auditing
 public class CompanyRepository implements CrudRepository<Integer, Company> {
-    @InjectBean
-    private ConnectionPool connectionPool;
+
+    //    @Resource(name = "pool1")
+    @Autowired
+//    @Qualifier("pool1")
+    private ConnectionPool pool1;
+
+    @Autowired
+    private List<ConnectionPool> pools;
+
+    @Value("${db.pool.size}")
+    private Integer poolSize;
 
     @PostConstruct
-    private void init(){
+    private void init() {
         System.out.println("init company repository");
     }
 
