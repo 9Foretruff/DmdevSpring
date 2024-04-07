@@ -17,7 +17,7 @@ public class CompanyRepository implements CrudRepository<Integer, Company> {
 
     //    @Resource(name = "pool1")
     @Autowired
-//    @Qualifier("pool1")
+    //    @Qualifier("pool1")
     private ConnectionPool pool1;
 
     @Autowired
@@ -29,6 +29,10 @@ public class CompanyRepository implements CrudRepository<Integer, Company> {
     @PostConstruct
     private void init() {
         System.out.println("init company repository");
+    }
+
+    public void setPool1(/*@Autowired*/ ConnectionPool pool1) {
+        this.pool1 = pool1;
     }
 
     @Override

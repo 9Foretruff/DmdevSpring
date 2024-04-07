@@ -16,10 +16,6 @@ public class ConnectionPool implements InitializingBean {
     public ConnectionPool() {
     }
 
-    public void setProperties(Map<String, Object> properties) {
-        this.properties = properties;
-    }
-
     public ConnectionPool(String username,
                           Integer poolSize,
                           List<Object> args,
@@ -27,6 +23,10 @@ public class ConnectionPool implements InitializingBean {
         this.username = username;
         this.poolSize = poolSize;
         this.args = args;
+        this.properties = properties;
+    }
+
+    public void setProperties(Map<String, Object> properties) {
         this.properties = properties;
     }
 
