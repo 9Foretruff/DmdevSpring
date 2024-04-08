@@ -15,10 +15,12 @@ public class ApplicationRunner {
         System.out.println(BeanFactoryPostProcessor.class.isAssignableFrom(value.getClass()));
         System.out.println(Serializable.class.isAssignableFrom(value.getClass()));
 
-        try (var context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class)) {
+        try (var context = new AnnotationConfigApplicationContext()) {
 //      clazz -> Map<String,Object>
+            context.register(ApplicationConfiguration.class);
             context.getEnvironment().setActiveProfiles("prod","web");
             context.refresh();
+
             var connectionPool = context.getBean("pool1", ConnectionPool.class);
             System.out.println(connectionPool);
 

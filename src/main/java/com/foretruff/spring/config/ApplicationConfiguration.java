@@ -43,7 +43,7 @@ public class ApplicationConfiguration {
     }
 
     @Bean
-    @Profile("prod")
+    @Profile("prod|web")
     // ! & |
     public UserRepository userRepository2(@Qualifier("pool2") ConnectionPool connectionPool) {
         return new UserRepository(connectionPool);
