@@ -7,13 +7,9 @@
                              http://www.springframework.org/schema/context
                              http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <context:annotation-config/>
     <context:component-scan base-package="com.foretruff.spring"/>
-    <context:property-placeholder location="classpath:application.properties"/>
 
-    <bean class="com.foretruff.spring.bpp.InjectBeanPostProcessor"/>
-    <bean class="com.foretruff.spring.bpp.TransactionBeanPostProcessor"/>
-    <bean class="com.foretruff.spring.bpp.AuditingBeanPostProcessor"/>
+    <context:property-placeholder location="classpath:application.properties"/>
 
     <!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
 
@@ -21,46 +17,29 @@
     <!--        <property name="locations" value="classpath:application.properties"/>-->
     <!--    </bean>-->
 
-    <bean class="com.foretruff.spring.bfpp.LogBeanFactoryPostProcessor"/>
-    <bean class="com.foretruff.spring.bfpp.VerifyPropertyBeanFactoryPostProcessor"/>
+<!--    <constructor-arg name="args" type="java.util.List">-->
+<!--        <list>-->
+<!--            <value>arg1=value1</value>-->
+<!--            <value>arg2=value2</value>-->
+<!--            <value>hello=value</value>-->
+<!--            <ref bean="driver"/>-->
+<!--        </list>-->
+<!--    </constructor-arg>-->
+<!--    <property name="properties">-->
+<!--        <map>-->
+<!--            <entry key="url" value="777"/>-->
+<!--            <entry key="key" value="test"/>-->
+<!--            <entry key="driver" value="#{driver.substring(3)}"/>-->
+<!--            <entry key="test" value="#{driver.length() > 10}"/>-->
+<!--            <entry key="tes1" value="#{driver.length() > T(Math).random() * 10}"/>-->
+<!--            <entry key="hosts" value="#{'${db.hosts}'.split(',')}"/>-->
+<!--            <entry key="currentUser" value="#{systemProperties['user.name']}"/>-->
+<!--        </map>-->
+<!--    </property>-->
 
     <bean id="driver" class="java.lang.String">
         <constructor-arg type="java.lang.String" value="${db.driver}"/>
     </bean>
-
-    <bean id="pool2" class="com.foretruff.spring.database.pool.ConnectionPool"/>
-    <bean id="pool1" name="p1,p2,p3" class="com.foretruff.spring.database.pool.ConnectionPool">
-        <constructor-arg name="username" type="java.lang.String" value="${db.username}" index="0"/>
-        <constructor-arg name="poolSize" type="java.lang.Integer" value="${db.pool.size}"/>
-        <constructor-arg name="args" type="java.util.List">
-            <list>
-                <value>arg1=value1</value>
-                <value>arg2=value2</value>
-                <value>hello=value</value>
-                <ref bean="driver"/>
-            </list>
-        </constructor-arg>
-        <constructor-arg name="properties" type="java.util.Map">
-            <!--            <map>-->
-            <!--                <entry key="url" value="postgresUrl"/>-->
-            <!--                <entry key="password" value="2006"/>-->
-            <!--                <entry key="driver" value-ref="driver"/>-->
-            <!--            </map>-->
-            <null/>
-        </constructor-arg>
-        <property name="properties">
-            <map>
-                <entry key="url" value="777"/>
-                <entry key="key" value="test"/>
-                <entry key="driver" value="#{driver.substring(3)}"/>
-                <entry key="test" value="#{driver.length() > 10}"/>
-                <entry key="tes1" value="#{driver.length() > T(Math).random() * 10}"/>
-                <entry key="hosts" value="#{'${db.hosts}'.split(',')}"/>
-                <entry key="currentUser" value="#{systemProperties['user.name']}"/>
-            </map>
-        </property>
-    </bean>
-    <!--    <bean id="pool2" name="p4,p5,p6" class="com.foretruff.spring.database.pool.ConnectionPool"/>-->
 
     <bean id="companyRepository" class="com.foretruff.spring.database.repository.CompanyRepository"/>
 

@@ -7,32 +7,33 @@ import com.foretruff.spring.database.pool.ConnectionPool;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 @Transaction
 @Auditing
 public class CompanyRepository implements CrudRepository<Integer, Company> {
 
-    //    @Resource(name = "pool1")
-    @Autowired
-    //    @Qualifier("pool1")
-    private ConnectionPool pool1;
+    private final ConnectionPool pool1;
 
-    @Autowired
-    private List<ConnectionPool> pools;
+    private final List<ConnectionPool> pools;
 
-    @Value("${db.pool.size}")
-    private Integer poolSize;
+    private final Integer poolSize;
+
+    public CompanyRepository(@Autowired ConnectionPool pool1,
+                             @Autowired List<ConnectionPool> pools,
+                             @Value("${db.pool.size}") Integer poolSize) {
+        this.pool1 = pool1;
+        this.pools = pools;
+        this.poolSize = poolSize;
+    }
 
     @PostConstruct
     private void init() {
         System.out.println("init company repository");
-    }
-
-    public void setPool1(/*@Autowired*/ ConnectionPool pool1) {
-        this.pool1 = pool1;
     }
 
     @Override
