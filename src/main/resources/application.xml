@@ -7,7 +7,14 @@
                              http://www.springframework.org/schema/context
                              http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <context:component-scan base-package="com.foretruff.spring"/>
+    <!--    <context:annotation-config/>-->
+    <context:component-scan base-package="com.foretruff.spring"
+                            annotation-config="true"
+                            resource-pattern="**/*.class"
+                            scoped-proxy="no"
+                            scope-resolver=""
+    />
+    <!--                            name-generator=""-->
 
     <context:property-placeholder location="classpath:application.properties"/>
 
@@ -17,25 +24,25 @@
     <!--        <property name="locations" value="classpath:application.properties"/>-->
     <!--    </bean>-->
 
-<!--    <constructor-arg name="args" type="java.util.List">-->
-<!--        <list>-->
-<!--            <value>arg1=value1</value>-->
-<!--            <value>arg2=value2</value>-->
-<!--            <value>hello=value</value>-->
-<!--            <ref bean="driver"/>-->
-<!--        </list>-->
-<!--    </constructor-arg>-->
-<!--    <property name="properties">-->
-<!--        <map>-->
-<!--            <entry key="url" value="777"/>-->
-<!--            <entry key="key" value="test"/>-->
-<!--            <entry key="driver" value="#{driver.substring(3)}"/>-->
-<!--            <entry key="test" value="#{driver.length() > 10}"/>-->
-<!--            <entry key="tes1" value="#{driver.length() > T(Math).random() * 10}"/>-->
-<!--            <entry key="hosts" value="#{'${db.hosts}'.split(',')}"/>-->
-<!--            <entry key="currentUser" value="#{systemProperties['user.name']}"/>-->
-<!--        </map>-->
-<!--    </property>-->
+    <!--    <constructor-arg name="args" type="java.util.List">-->
+    <!--        <list>-->
+    <!--            <value>arg1=value1</value>-->
+    <!--            <value>arg2=value2</value>-->
+    <!--            <value>hello=value</value>-->
+    <!--            <ref bean="driver"/>-->
+    <!--        </list>-->
+    <!--    </constructor-arg>-->
+    <!--    <property name="properties">-->
+    <!--        <map>-->
+    <!--            <entry key="url" value="777"/>-->
+    <!--            <entry key="key" value="test"/>-->
+    <!--            <entry key="driver" value="#{driver.substring(3)}"/>-->
+    <!--            <entry key="test" value="#{driver.length() > 10}"/>-->
+    <!--            <entry key="tes1" value="#{driver.length() > T(Math).random() * 10}"/>-->
+    <!--            <entry key="hosts" value="#{'${db.hosts}'.split(',')}"/>-->
+    <!--            <entry key="currentUser" value="#{systemProperties['user.name']}"/>-->
+    <!--        </map>-->
+    <!--    </property>-->
 
     <bean id="driver" class="java.lang.String">
         <constructor-arg type="java.lang.String" value="${db.driver}"/>
