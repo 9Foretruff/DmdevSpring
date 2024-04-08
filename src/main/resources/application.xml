@@ -8,21 +8,21 @@
                              http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
     <!--    <context:annotation-config/>-->
-    <context:component-scan base-package="com.foretruff.spring"
-                            annotation-config="true"
-                            resource-pattern="**/*.class"
-                            scoped-proxy="no"
-                            use-default-filters="false"
-                            >
-        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
-        <context:include-filter type="assignable" expression="com.foretruff.spring.database.repository.CrudRepository"/>
-        <context:include-filter type="regex" expression="com\..+Repository"/>
-    </context:component-scan>
+<!--    <context:component-scan base-package="com.foretruff.spring"-->
+<!--                            annotation-config="true"-->
+<!--                            resource-pattern="**/*.class"-->
+<!--                            scoped-proxy="no"-->
+<!--                            use-default-filters="false"-->
+<!--                            >-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>-->
+<!--        <context:include-filter type="assignable" expression="com.foretruff.spring.database.repository.CrudRepository"/>-->
+<!--        <context:include-filter type="regex" expression="com\..+Repository"/>-->
+<!--    </context:component-scan>-->
 
 
     <!--                            name-generator=""-->
 
-    <context:property-placeholder location="classpath:application.properties"/>
+    <!--    <context:property-placeholder location="classpath:application.properties"/>-->
 
     <!--    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>-->
 
