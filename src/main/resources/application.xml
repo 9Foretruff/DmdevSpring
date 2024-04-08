@@ -12,7 +12,8 @@
                             annotation-config="true"
                             resource-pattern="**/*.class"
                             scoped-proxy="no"
-                            use-default-filters="false">
+                            use-default-filters="false"
+                            >
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>
         <context:include-filter type="assignable" expression="com.foretruff.spring.database.repository.CrudRepository"/>
         <context:include-filter type="regex" expression="com\..+Repository"/>
