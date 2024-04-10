@@ -14,4 +14,5 @@ public class EntityEvent extends ApplicationEvent {
     public AccessType getAccessType() {
         return accessType;
     }
+
 }
