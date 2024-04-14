@@ -26,6 +26,7 @@ public class ApplicationRunner {
 
             var companyRepository = context.getBean("companyRepository", CrudRepository.class);
             System.out.println(companyRepository.findById(1));
+
         }
     }
 }
