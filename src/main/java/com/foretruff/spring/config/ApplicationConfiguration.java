@@ -34,7 +34,7 @@ public class ApplicationConfiguration {
     @Bean("pool2")
     @Scope(BeanDefinition.SCOPE_SINGLETON)
     public ConnectionPool pool2(@Value("${db.username}") String username) {
-        return new ConnectionPool("username", 20);
+        return new ConnectionPool(username, 20);
     }
 
     @Bean
@@ -44,7 +44,7 @@ public class ApplicationConfiguration {
 
     @Bean
     @Profile("prod|web")
-    // ! & |
+    //      ! & |
     public UserRepository userRepository2(@Qualifier("pool2") ConnectionPool connectionPool) {
         return new UserRepository(connectionPool);
     }
