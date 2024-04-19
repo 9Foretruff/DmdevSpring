@@ -42,11 +42,16 @@ public class ApplicationConfiguration {
         return new ConnectionPool("test-pool", 25);
     }
 
-    @Bean
+    @Bean("userRepository2")
     @Profile("prod|web")
     //      ! & |
     public UserRepository userRepository2(@Qualifier("pool2") ConnectionPool connectionPool) {
         return new UserRepository(connectionPool);
+    }
+
+    @Bean("userRepository4")
+    public UserRepository userRepository4() {
+        return new UserRepository(pool3());
     }
 
     @Bean

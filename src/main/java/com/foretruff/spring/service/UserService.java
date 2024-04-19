@@ -12,7 +12,7 @@ public class UserService {
     private final CrudRepository<Integer, Company> companyRepository;
 
     public UserService(@Qualifier("userRepository2") UserRepository userRepository,
-                       CrudRepository<Integer, Company> companyRepository) {
+                       @Qualifier("companyRepository") CrudRepository<Integer, Company> companyRepository) {
         this.userRepository = userRepository;
         this.companyRepository = companyRepository;
     }
