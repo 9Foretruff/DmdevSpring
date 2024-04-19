@@ -5,6 +5,7 @@ import com.foretruff.spring.bpp.Transaction;
 import com.foretruff.spring.database.entity.Company;
 import com.foretruff.spring.database.pool.ConnectionPool;
 import jakarta.annotation.PostConstruct;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -18,21 +19,16 @@ import java.util.Optional;
 @Scope(BeanDefinition.SCOPE_SINGLETON)
 @Transaction
 @Auditing
+@RequiredArgsConstructor
 public class CompanyRepository implements CrudRepository<Integer, Company> {
 
+    @Qualifier("pool1")
     private final ConnectionPool pool1;
 
     private final List<ConnectionPool> pools;
 
+    @Value("${db.pool.size}")
     private final Integer poolSize;
-
-    public CompanyRepository(@Qualifier("pool1") ConnectionPool pool1,
-                             List<ConnectionPool> pools,
-                             @Value("${db.pool.size}") Integer poolSize) {
-        this.pool1 = pool1;
-        this.pools = pools;
-        this.poolSize = poolSize;
-    }
 
     @PostConstruct
     private void init() {

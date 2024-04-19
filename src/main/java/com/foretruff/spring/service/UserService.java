@@ -3,18 +3,12 @@ package com.foretruff.spring.service;
 import com.foretruff.spring.database.entity.Company;
 import com.foretruff.spring.database.repository.CrudRepository;
 import com.foretruff.spring.database.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Qualifier;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
     private final CrudRepository<Integer, Company> companyRepository;
-
-    public UserService(@Qualifier("userRepository4") UserRepository userRepository,
-                       @Qualifier("companyRepository") CrudRepository<Integer, Company> companyRepository) {
-        this.userRepository = userRepository;
-        this.companyRepository = companyRepository;
-    }
-
 }
