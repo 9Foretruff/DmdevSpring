@@ -19,11 +19,13 @@ db:
     - size: 2
       timeout: 2
 
-#spring.profiles.active=qa
-
+  #spring.profiles.active=qa
 
 
 logging:
   level:
-    root: warn
+    root: INFO
     com.foretruff.spring.database.pool: info
+  file:
+    name: foretruff.log
+    path: /
