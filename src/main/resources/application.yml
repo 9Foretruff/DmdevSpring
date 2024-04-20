@@ -20,3 +20,10 @@ db:
       timeout: 2
 
 #spring.profiles.active=qa
+
+
+
+logging:
+  level:
+    root: warn
+    com.foretruff.spring.database.pool: info
