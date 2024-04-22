@@ -48,5 +48,4 @@ class CompanyServiceTest {
         verify(eventPublisher).publishEvent(any(EntityEvent.class));
         verifyNoMoreInteractions(eventPublisher, userService);
     }
-
 }
