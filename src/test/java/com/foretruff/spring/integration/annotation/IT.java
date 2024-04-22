@@ -1,5 +1,6 @@
 package com.foretruff.spring.integration.annotation;
 
+import com.foretruff.spring.integration.TestApplicationRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
@@ -8,9 +9,9 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.TYPE})
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@SpringBootTest
 @ActiveProfiles("test")
+@SpringBootTest(classes = TestApplicationRunner.class)
 public @interface IT {
 }
