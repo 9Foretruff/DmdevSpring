@@ -1,6 +1,6 @@
 db:
   username: ${username.value:postgres}
-  password: pass
+  password: passііі
   driver: PostgresDriver
   url: postgres:5432
   hosts: localhost,127.0.0.1

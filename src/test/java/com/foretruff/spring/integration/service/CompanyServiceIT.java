@@ -1,24 +1,22 @@
 package com.foretruff.spring.integration.service;
 
+import com.foretruff.spring.config.DatabaseProperties;
 import com.foretruff.spring.dto.CompanyReadDto;
+import com.foretruff.spring.integration.annotation.IT;
 import com.foretruff.spring.service.CompanyService;
+import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-//@ExtendWith(SpringExtension.class)
-//@ContextConfiguration(classes = ApplicationRunner.class, initializers = ConfigDataApplicationContextInitializer.class)
-//@TestPropertySource -- не подходит для yaml
-@SpringBootTest
+@IT
+@RequiredArgsConstructor
+//@TestConstructor(autowireMode = ALL)
 public class CompanyServiceIT {
-
     private static final Integer COMPANY_ID = 1;
-
-    @Autowired
-    private CompanyService companyService;
+    private final CompanyService companyService;
+    private final DatabaseProperties databaseProperties;
 
     @Test
     void findById() {
