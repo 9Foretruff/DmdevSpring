@@ -15,4 +15,5 @@ public class ApplicationRunner {
         System.out.println(context.getBean("pool1", ConnectionPool.class));
         System.out.println(context.getBean(DatabaseProperties.class));
     }
+
 }
