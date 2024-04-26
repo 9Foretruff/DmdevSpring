@@ -8,6 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
 @SpringBootApplication
 @ConfigurationPropertiesScan
+//@EntityScan
 public class ApplicationRunner {
 
     public static void main(String[] args) {

@@ -1,6 +1,5 @@
 package com.foretruff.spring.database.entity;
 
-import jakarta.persistence.CollectionTable;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
