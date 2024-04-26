@@ -48,3 +48,28 @@
 2024-04-26T17:51:45.033+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-04-26T17:51:45.037+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-04-26T17:51:45.045+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-26T22:30:33.506+03:00  INFO 2268908 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 2268908 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-26T22:30:33.519+03:00  INFO 2268908 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-04-26T22:30:34.886+03:00  INFO 2268908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26T22:30:34.968+03:00  INFO 2268908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2024-04-26T22:30:35.687+03:00  INFO 2268908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-26T22:30:35.931+03:00  INFO 2268908 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a1f5f71
+2024-04-26T22:30:35.933+03:00  INFO 2268908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-26T22:30:37.097+03:00  INFO 2268908 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-26T22:30:38.703+03:00  INFO 2268908 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-26T22:30:38.905+03:00  INFO 2268908 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-26T22:30:39.424+03:00  INFO 2268908 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-26T22:30:42.003+03:00  INFO 2268908 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-26T22:30:42.008+03:00  INFO 2268908 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26T22:30:42.021+03:00  INFO 2268908 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-26T22:30:42.039+03:00  INFO 2268908 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T22:30:42.045+03:00  INFO 2268908 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T22:30:42.046+03:00  INFO 2268908 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T22:30:42.049+03:00  INFO 2268908 --- [main] c.f.s.d.repository.CompanyRepository     : init company repository
+2024-04-26T22:30:42.847+03:00  INFO 2268908 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 10.165 seconds (process running for 12.038)
+2024-04-26T22:30:42.859+03:00  INFO 2268908 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T22:30:42.859+03:00  INFO 2268908 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T22:30:42.859+03:00  INFO 2268908 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T22:30:42.860+03:00  INFO 2268908 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26T22:30:42.861+03:00  INFO 2268908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-26T22:30:42.867+03:00  INFO 2268908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
