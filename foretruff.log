@@ -1,40 +1,50 @@
-2024-04-20T23:32:54.748+03:00  INFO 133856 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
-2024-04-20T23:32:54.756+03:00  INFO 133856 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
-2024-04-20T23:32:54.757+03:00  INFO 133856 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
-2024-04-20T23:32:54.873+03:00  INFO 133856 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
-2024-04-20T23:32:54.873+03:00  INFO 133856 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
-2024-04-20T23:32:54.873+03:00  INFO 133856 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
-2024-04-20T23:42:42.620+03:00 ERROR 122672 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [logs/application.%d{yyyy-MM-dd}.%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
-	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
-	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
-	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
-	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
-	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
-	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
-	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:369)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at com.foretruff.spring.ApplicationRunner.main(ApplicationRunner.java:14)
-Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
-ERROR in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Filename pattern [logs/application.%d{yyyy-MM-dd}.%i.log] contains an integer token converter, i.e. %i, INCOMPATIBLE with this configuration. Remove it.
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:277)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:255)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:81)
-	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
-	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:189)
-	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
-	... 19 common frames omitted
-
+2024-04-26T17:48:38.564+03:00  INFO 31664 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 31664 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-26T17:48:38.569+03:00  INFO 31664 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-04-26T17:48:39.110+03:00  INFO 31664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26T17:48:39.135+03:00  INFO 31664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2024-04-26T17:48:39.508+03:00  INFO 31664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-26T17:48:39.723+03:00  INFO 31664 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@788ddc1f
+2024-04-26T17:48:39.729+03:00  INFO 31664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-26T17:48:39.783+03:00  INFO 31664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-26T17:48:39.861+03:00  INFO 31664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-26T17:48:39.904+03:00  INFO 31664 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-26T17:48:40.200+03:00  INFO 31664 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-26T17:48:40.644+03:00  INFO 31664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-26T17:48:40.651+03:00  INFO 31664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26T17:48:40.670+03:00  INFO 31664 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-26T17:48:40.675+03:00  INFO 31664 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T17:48:40.680+03:00  INFO 31664 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T17:48:40.681+03:00  INFO 31664 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T17:48:40.682+03:00  INFO 31664 --- [main] c.f.s.d.repository.CompanyRepository     : init company repository
+2024-04-26T17:48:40.892+03:00  INFO 31664 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 2.87 seconds (process running for 4.092)
+2024-04-26T17:48:40.911+03:00  INFO 31664 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T17:48:40.911+03:00  INFO 31664 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T17:48:40.911+03:00  INFO 31664 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T17:48:40.911+03:00  INFO 31664 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26T17:48:40.913+03:00  INFO 31664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-26T17:48:40.918+03:00  INFO 31664 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-26T17:51:42.081+03:00  INFO 2266196 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 2266196 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-26T17:51:42.159+03:00  INFO 2266196 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-04-26T17:51:42.836+03:00  INFO 2266196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-26T17:51:42.868+03:00  INFO 2266196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2024-04-26T17:51:43.236+03:00  INFO 2266196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-26T17:51:43.495+03:00  INFO 2266196 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52f57666
+2024-04-26T17:51:43.500+03:00  INFO 2266196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-26T17:51:43.581+03:00  INFO 2266196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-26T17:51:43.670+03:00  INFO 2266196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-26T17:51:43.726+03:00  INFO 2266196 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-26T17:51:44.101+03:00  INFO 2266196 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-26T17:51:44.688+03:00  INFO 2266196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-26T17:51:44.704+03:00  INFO 2266196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26T17:51:44.728+03:00  INFO 2266196 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-26T17:51:44.735+03:00  INFO 2266196 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T17:51:44.743+03:00  INFO 2266196 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T17:51:44.744+03:00  INFO 2266196 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-26T17:51:44.748+03:00  INFO 2266196 --- [main] c.f.s.d.repository.CompanyRepository     : init company repository
+2024-04-26T17:51:45.011+03:00  INFO 2266196 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 3.497 seconds (process running for 4.479)
+2024-04-26T17:51:45.031+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T17:51:45.032+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T17:51:45.032+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-26T17:51:45.033+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-26T17:51:45.037+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-26T17:51:45.045+03:00  INFO 2266196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -29,3 +29,15 @@ logging:
   file:
     name: foretruff.log
     path: /
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5438/postgres
+    username: postgres
+    password: 2006
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+
