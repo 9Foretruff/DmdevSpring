@@ -28,24 +28,24 @@ public class ApplicationConfiguration {
         return new ConnectionPool("test-pool", 25);
     }
 
-    @Bean("userRepository2")
-    @Profile("prod|web")
-    //      ! & |
-    public UserRepository userRepository2(@Qualifier("pool2") ConnectionPool connectionPool) {
-        return new UserRepository(connectionPool);
-    }
-
-    @Bean("userRepository4")
-    public UserRepository userRepository4() {
-        return new UserRepository(pool3());
-    }
-
-    @Bean
-    public UserRepository userRepository3() {
-        var connectionPool1 = pool3();
-        var connectionPool2 = pool3();
-        var connectionPool3 = pool3();
-        return new UserRepository(pool3());
-    }
+//    @Bean("userRepository2")
+//    @Profile("prod|web")
+//    //      ! & |
+//    public UserRepository userRepository2(@Qualifier("pool2") ConnectionPool connectionPool) {
+//        return new UserRepository(connectionPool);
+//    }
+//
+//    @Bean("userRepository4")
+//    public UserRepository userRepository4() {
+//        return new UserRepository(pool3());
+//    }
+//
+//    @Bean
+//    public UserRepository userRepository3() {
+//        var connectionPool1 = pool3();
+//        var connectionPool2 = pool3();
+//        var connectionPool3 = pool3();
+//        return new UserRepository(pool3());
+//    }
 
 }
