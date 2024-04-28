@@ -31,6 +31,13 @@ class CompanyRepositoryTest {
     private final TransactionTemplate transactionTemplate;
     private final CompanyRepository companyRepository;
 
+
+    @Test
+    void checkFindByQueries() {
+        companyRepository.findByName("Google");
+        companyRepository.findAllByNameContainingIgnoreCase("a");
+    }
+
     @Test
     void delete() {
         var maybeCompany = companyRepository.findById(APPLE_ID);
