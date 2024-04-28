@@ -31,6 +31,9 @@ public class TransactionBeanPostProcessor implements BeanPostProcessor {
                         System.out.println("open transaction ");
                         try {
                             return method.invoke(bean, args);
+                        } catch (Exception exception) {
+                            System.out.println("rollback transaction");
+                            throw exception;
                         } finally {
                             System.out.println("close transaction");
                         }
