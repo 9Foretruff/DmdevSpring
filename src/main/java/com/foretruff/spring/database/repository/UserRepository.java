@@ -2,14 +2,12 @@ package com.foretruff.spring.database.repository;
 
 import com.foretruff.spring.database.entity.Role;
 import com.foretruff.spring.database.entity.User;
-import com.foretruff.spring.dto.PersonalInfo;
 import com.foretruff.spring.dto.PersonalInfo2;
 import jakarta.persistence.LockModeType;
 import jakarta.persistence.QueryHint;
 import org.hibernate.jpa.AvailableHints;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -23,7 +21,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long>, FilterUserRepository {
 
     @Query("select u from User u " +
            "where u.firstname like %:firstName% and u.lastname like %:lastName%")
