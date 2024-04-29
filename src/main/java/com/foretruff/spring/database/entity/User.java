@@ -39,7 +39,7 @@ import java.util.Objects;
 @Builder
 @Entity
 @Table(name = "users")
-public class User implements BaseEntity<Long> {
+public class User extends AuditingEntity<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
