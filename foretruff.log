@@ -680,3 +680,213 @@
 2024-04-29T18:02:42.557+03:00  INFO 56904 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-04-29T18:02:42.559+03:00  INFO 56904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-04-29T18:02:42.567+03:00  INFO 56904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T18:07:56.711+03:00  INFO 93040 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 93040 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:07:56.712+03:00  INFO 93040 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:07:57.158+03:00  INFO 93040 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:07:57.250+03:00  INFO 93040 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:07:57.663+03:00  INFO 93040 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:07:57.820+03:00  INFO 93040 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@715f45c6
+2024-04-29T18:07:57.823+03:00  INFO 93040 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:07:57.884+03:00  INFO 93040 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:07:57.948+03:00  INFO 93040 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:07:58.002+03:00  INFO 93040 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:07:58.285+03:00  INFO 93040 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:07:59.545+03:00  INFO 93040 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:07:59.901+03:00  INFO 93040 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:07:59.917+03:00  INFO 93040 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:08:00.498+03:00  INFO 93040 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:08:00.980+03:00  INFO 93040 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:08:01.490+03:00  INFO 93040 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:08:01.492+03:00  INFO 93040 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:08:01.659+03:00  INFO 93040 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.26 seconds (process running for 6.542)
+2024-04-29T18:08:01.920+03:00  INFO 93040 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:08:01.920+03:00  INFO 93040 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:08:01.921+03:00  INFO 93040 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:08:01.921+03:00  INFO 93040 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:08:01.923+03:00  INFO 93040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T18:08:01.932+03:00  INFO 93040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T18:11:47.421+03:00  INFO 93872 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 93872 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:11:47.423+03:00  INFO 93872 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:11:50.764+03:00  INFO 92952 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 92952 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:11:50.766+03:00  INFO 92952 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:11:51.276+03:00  INFO 92952 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:11:51.363+03:00  INFO 92952 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:11:51.830+03:00  INFO 92952 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:11:52.008+03:00  INFO 92952 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cc01c7f
+2024-04-29T18:11:52.010+03:00  INFO 92952 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:11:52.061+03:00  INFO 92952 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:11:52.119+03:00  INFO 92952 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:11:52.165+03:00  INFO 92952 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:11:52.487+03:00  INFO 92952 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:11:53.681+03:00  INFO 92952 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:11:53.988+03:00  INFO 92952 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:11:53.998+03:00  INFO 92952 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:11:54.512+03:00  INFO 92952 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:11:55.012+03:00  INFO 92952 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:11:55.534+03:00  INFO 92952 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:11:55.535+03:00  INFO 92952 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:11:55.764+03:00  INFO 92952 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.368 seconds (process running for 6.841)
+2024-04-29T18:11:56.088+03:00  INFO 92952 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:11:56.088+03:00  INFO 92952 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:11:56.088+03:00  INFO 92952 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:11:56.089+03:00  INFO 92952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:11:56.092+03:00  INFO 92952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T18:11:56.106+03:00  INFO 92952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T18:17:55.157+03:00  INFO 82416 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 82416 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:17:55.159+03:00  INFO 82416 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:17:55.671+03:00  INFO 82416 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:17:55.743+03:00  INFO 82416 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:17:56.178+03:00  INFO 82416 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:17:56.359+03:00  INFO 82416 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a058df8
+2024-04-29T18:17:56.361+03:00  INFO 82416 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:17:56.412+03:00  INFO 82416 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:17:56.466+03:00  INFO 82416 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:17:56.509+03:00  INFO 82416 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:17:56.816+03:00  INFO 82416 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:17:57.950+03:00  INFO 82416 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:17:58.244+03:00  INFO 82416 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:17:58.254+03:00  INFO 82416 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:17:58.773+03:00  INFO 82416 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:17:59.366+03:00  INFO 82416 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:17:59.928+03:00  INFO 82416 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:17:59.931+03:00  INFO 82416 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:18:00.171+03:00  INFO 82416 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.368 seconds (process running for 6.673)
+2024-04-29T18:18:00.571+03:00  INFO 82416 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:18:00.573+03:00  INFO 82416 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:18:00.573+03:00  INFO 82416 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:18:00.574+03:00  INFO 82416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:18:00.577+03:00  INFO 82416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T18:18:00.588+03:00  INFO 82416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T18:18:20.553+03:00  INFO 86148 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 86148 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:18:20.555+03:00  INFO 86148 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:18:21.165+03:00  INFO 86148 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:18:21.247+03:00  INFO 86148 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:18:21.753+03:00  INFO 86148 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:18:21.958+03:00  INFO 86148 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@740fefc6
+2024-04-29T18:18:21.960+03:00  INFO 86148 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:18:22.033+03:00  INFO 86148 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:18:22.104+03:00  INFO 86148 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:18:22.153+03:00  INFO 86148 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:18:22.448+03:00  INFO 86148 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:18:23.753+03:00  INFO 86148 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:18:24.061+03:00  INFO 86148 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:18:24.073+03:00  INFO 86148 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:18:24.718+03:00  INFO 86148 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:18:25.130+03:00  INFO 86148 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:18:25.733+03:00  INFO 86148 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:18:25.736+03:00  INFO 86148 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:18:25.928+03:00  INFO 86148 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.823 seconds (process running for 7.456)
+2024-04-29T18:19:07.170+03:00  INFO 90896 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 90896 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:19:07.172+03:00  INFO 90896 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:19:07.690+03:00  INFO 90896 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:19:07.768+03:00  INFO 90896 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:19:08.223+03:00  INFO 90896 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:19:08.397+03:00  INFO 90896 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@740fefc6
+2024-04-29T18:19:08.399+03:00  INFO 90896 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:19:08.453+03:00  INFO 90896 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:19:08.513+03:00  INFO 90896 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:19:08.562+03:00  INFO 90896 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:19:08.865+03:00  INFO 90896 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:19:10.284+03:00  INFO 90896 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:19:10.592+03:00  INFO 90896 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:19:10.604+03:00  INFO 90896 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:19:11.192+03:00  INFO 90896 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:19:11.613+03:00  INFO 90896 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:19:12.247+03:00  INFO 90896 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:19:12.250+03:00  INFO 90896 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:19:12.471+03:00  INFO 90896 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.669 seconds (process running for 7.098)
+2024-04-29T18:20:10.365+03:00  INFO 88616 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 88616 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:20:10.367+03:00  INFO 88616 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:20:10.956+03:00  INFO 88616 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:20:11.068+03:00  INFO 88616 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:20:11.535+03:00  INFO 88616 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:20:11.724+03:00  INFO 88616 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d5c41e5
+2024-04-29T18:20:11.727+03:00  INFO 88616 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:20:11.782+03:00  INFO 88616 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:20:11.848+03:00  INFO 88616 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:20:11.897+03:00  INFO 88616 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:20:12.201+03:00  INFO 88616 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:20:13.385+03:00  INFO 88616 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:20:13.699+03:00  INFO 88616 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:20:13.712+03:00  INFO 88616 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:20:14.284+03:00  INFO 88616 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:20:14.689+03:00  INFO 88616 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:20:15.169+03:00  INFO 88616 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:20:15.170+03:00  INFO 88616 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:20:15.377+03:00  INFO 88616 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.403 seconds (process running for 7.041)
+2024-04-29T18:20:45.708+03:00  INFO 88616 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:20:45.708+03:00  INFO 88616 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:20:45.708+03:00  INFO 88616 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:20:45.709+03:00  INFO 88616 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:20:45.711+03:00  INFO 88616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T18:20:45.718+03:00  INFO 88616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T18:21:38.573+03:00  INFO 93900 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 93900 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:21:38.575+03:00  INFO 93900 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:21:39.183+03:00  INFO 93900 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:21:39.300+03:00  INFO 93900 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:21:39.778+03:00  INFO 93900 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:21:39.975+03:00  INFO 93900 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@715f45c6
+2024-04-29T18:21:39.977+03:00  INFO 93900 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:21:40.033+03:00  INFO 93900 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:21:40.106+03:00  INFO 93900 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:21:40.172+03:00  INFO 93900 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:21:40.539+03:00  INFO 93900 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:21:41.860+03:00  INFO 93900 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:21:42.184+03:00  INFO 93900 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:21:42.196+03:00  INFO 93900 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:21:42.813+03:00  INFO 93900 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:21:43.202+03:00  INFO 93900 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:21:43.681+03:00  INFO 93900 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:21:43.683+03:00  INFO 93900 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:21:43.841+03:00  INFO 93900 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.722 seconds (process running for 7.112)
+2024-04-29T18:21:44.096+03:00  INFO 93900 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:21:44.096+03:00  INFO 93900 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:21:44.096+03:00  INFO 93900 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:21:44.096+03:00  INFO 93900 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:21:44.099+03:00  INFO 93900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T18:21:44.106+03:00  INFO 93900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T18:22:09.870+03:00  INFO 93736 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 93736 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:22:09.872+03:00  INFO 93736 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:22:10.483+03:00  INFO 93736 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:22:10.563+03:00  INFO 93736 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:22:11.056+03:00  INFO 93736 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:22:11.243+03:00  INFO 93736 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@733e6df7
+2024-04-29T18:22:11.245+03:00  INFO 93736 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:22:11.298+03:00  INFO 93736 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:22:11.358+03:00  INFO 93736 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:22:11.408+03:00  INFO 93736 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:22:11.694+03:00  INFO 93736 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:22:12.921+03:00  INFO 93736 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:22:13.244+03:00  INFO 93736 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:22:13.257+03:00  INFO 93736 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:22:13.843+03:00  INFO 93736 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:22:14.256+03:00  INFO 93736 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:22:14.746+03:00  INFO 93736 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:22:14.748+03:00  INFO 93736 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:22:14.924+03:00  INFO 93736 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.421 seconds (process running for 6.891)
+2024-04-29T18:29:41.078+03:00  INFO 86936 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 86936 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-04-29T18:29:41.080+03:00  INFO 86936 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-04-29T18:29:41.753+03:00  INFO 86936 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T18:29:41.849+03:00  INFO 86936 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2024-04-29T18:29:42.418+03:00  INFO 86936 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T18:29:42.626+03:00  INFO 86936 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bbcf6f0
+2024-04-29T18:29:42.627+03:00  INFO 86936 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T18:29:42.680+03:00  INFO 86936 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T18:29:42.740+03:00  INFO 86936 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T18:29:42.794+03:00  INFO 86936 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T18:29:43.095+03:00  INFO 86936 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T18:29:44.328+03:00  INFO 86936 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T18:29:44.642+03:00  INFO 86936 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:29:44.655+03:00  INFO 86936 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:29:45.189+03:00  INFO 86936 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-04-29T18:29:45.593+03:00  INFO 86936 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T18:29:46.052+03:00  INFO 86936 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:29:46.053+03:00  INFO 86936 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-04-29T18:29:46.229+03:00  INFO 86936 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.627 seconds (process running for 7.25)
+2024-04-29T18:32:56.181+03:00  WARN 86936 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m13s452ms200µs300ns).
+2024-04-29T18:32:56.292+03:00  INFO 86936 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:32:56.293+03:00  INFO 86936 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:32:56.293+03:00  INFO 86936 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-04-29T18:32:56.293+03:00  INFO 86936 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T18:32:56.297+03:00  INFO 86936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T18:32:56.305+03:00  INFO 86936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

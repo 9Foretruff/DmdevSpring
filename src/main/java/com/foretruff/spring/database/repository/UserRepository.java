@@ -2,6 +2,8 @@ package com.foretruff.spring.database.repository;
 
 import com.foretruff.spring.database.entity.Role;
 import com.foretruff.spring.database.entity.User;
+import com.foretruff.spring.dto.PersonalInfo;
+import com.foretruff.spring.dto.PersonalInfo2;
 import jakarta.persistence.LockModeType;
 import jakarta.persistence.QueryHint;
 import org.hibernate.jpa.AvailableHints;
@@ -51,5 +53,17 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query(value = "select u from User u ",
             countQuery = "select count(distinct u.firstname) from User u")
     Page<User> findAllBy(Pageable pageable);
+
+    //    List<PersonalInfo> findAllByCompanyId(Integer companyId);
+//    <T> List<T> findAllByCompanyId(Integer companyId, Class<T> clazz);
+
+    @Query(value = "SELECT " +
+                   "firstname , " +
+                   "lastname , " +
+                   "birth_date as birthDate " +
+                   "FROM users " +
+                   "WHERE company_id = :companyId",
+            nativeQuery = true)
+    List<PersonalInfo2> findAllByCompanyId(Integer companyId);
 
 }
