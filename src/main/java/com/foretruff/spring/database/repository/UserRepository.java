@@ -2,14 +2,19 @@ package com.foretruff.spring.database.repository;
 
 import com.foretruff.spring.database.entity.Role;
 import com.foretruff.spring.database.entity.User;
+import jakarta.persistence.LockModeType;
+import jakarta.persistence.QueryHint;
+import org.hibernate.jpa.AvailableHints;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.jpa.repository.QueryHints;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -34,6 +39,8 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     Optional<User> findTopByOrderByIdDesc();
 
+    @Lock(LockModeType.PESSIMISTIC_READ)
+    @QueryHints(@QueryHint(name = AvailableHints.HINT_FETCH_SIZE, value = "50"))
     List<User> findTop3ByBirthDateBefore(LocalDate birthdate, Sort sort);
 
     //Collection , Stream
