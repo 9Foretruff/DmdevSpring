@@ -32,6 +32,10 @@ logging:
     path: /
 
 spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp
+      suffix: .jsp
   datasource:
     url: jdbc:postgresql://localhost:5438/postgres
     username: postgres
