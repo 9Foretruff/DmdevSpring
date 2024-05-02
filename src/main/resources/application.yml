@@ -26,6 +26,7 @@ logging:
   level:
     root: INFO
     com.foretruff.spring.database.pool: info
+    org.springframework.jdbc.core: TRACE
   file:
     name: foretruff.log
     path: /
