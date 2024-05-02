@@ -20,6 +20,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
+import org.hibernate.envers.RelationTargetAuditMode;
 import org.hibernate.proxy.HibernateProxy;
 
 import java.time.LocalDate;
@@ -39,6 +42,7 @@ import java.util.Objects;
 @Builder
 @Entity
 @Table(name = "users")
+@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
 public class User extends AuditingEntity<Long> {
 
     @Id
@@ -62,6 +66,7 @@ public class User extends AuditingEntity<Long> {
     @ToString.Exclude
     private Company company;
 
+    @NotAudited
     @Builder.Default
     @OneToMany(mappedBy = "user")
     @ToString.Exclude

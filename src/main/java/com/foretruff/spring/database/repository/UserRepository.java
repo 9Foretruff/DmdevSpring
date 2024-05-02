@@ -15,13 +15,17 @@ import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.QueryHints;
+import org.springframework.data.repository.history.RevisionRepository;
 
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
 
-public interface UserRepository extends JpaRepository<User, Long>, FilterUserRepository {
+public interface UserRepository extends
+        JpaRepository<User, Long>,
+        FilterUserRepository,
+        RevisionRepository<User,Long,Integer> {
 
     @Query("select u from User u " +
            "where u.firstname like %:firstName% and u.lastname like %:lastName%")
