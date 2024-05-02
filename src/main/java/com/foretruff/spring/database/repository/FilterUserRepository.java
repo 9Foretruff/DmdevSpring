@@ -13,4 +13,8 @@ public interface FilterUserRepository {
 
     List<PersonalInfo> findAllByCompanyIdAndRole(Integer companyId, Role role);
 
+    void updateCompanyAndRole(List<User> users);
+
+    void updateCompanyAndRoleNamed(List<User> users);
+
 }

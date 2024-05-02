@@ -27,6 +27,13 @@ class UserRepositoryTest {
     private final UserRepository userRepository;
 
     @Test
+    void checkButch() {
+        var users = userRepository.findAll();
+        userRepository.updateCompanyAndRole(users);
+        System.out.println();
+    }
+
+    @Test
     void checkJdbcTemplate() {
         var users = userRepository.findAllByCompanyIdAndRole(1, Role.USER);
         assertThat(users).hasSize(1);

@@ -886,3 +886,108 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "public.revision" 
 2024-05-02T17:52:34.880+03:00  INFO 80044 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-02T17:52:34.882+03:00  INFO 80044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-02T17:52:34.891+03:00  INFO 80044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T18:07:12.092+03:00  INFO 47772 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 47772 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T18:07:12.094+03:00  INFO 47772 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-05-02T18:07:12.523+03:00  INFO 47772 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T18:07:12.607+03:00  INFO 47772 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2024-05-02T18:07:13.246+03:00  INFO 47772 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T18:07:13.326+03:00  INFO 47772 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T18:07:13.375+03:00  INFO 47772 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T18:07:13.486+03:00  INFO 47772 --- [Test worker] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T18:07:13.680+03:00  INFO 47772 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T18:07:13.714+03:00  INFO 47772 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T18:07:13.956+03:00  INFO 47772 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c0798bd
+2024-05-02T18:07:13.958+03:00  INFO 47772 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T18:07:14.479+03:00  INFO 47772 --- [Test worker] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T18:07:15.440+03:00  INFO 47772 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T18:07:15.902+03:00  INFO 47772 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T18:07:15.911+03:00  INFO 47772 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T18:07:16.460+03:00  INFO 47772 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T18:07:16.848+03:00  INFO 47772 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T18:07:17.369+03:00  INFO 47772 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T18:07:17.371+03:00  INFO 47772 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T18:07:17.525+03:00  INFO 47772 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.805 seconds (process running for 7.25)
+2024-05-02T18:07:17.736+03:00 DEBUG 47772 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing SQL batch update [UPDATE users
+SET company_id = ?
+AND role = ?
+WHERE id = ?
+]
+2024-05-02T18:07:17.738+03:00 DEBUG 47772 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users
+SET company_id = ?
+AND role = ?
+WHERE id = ?
+]
+2024-05-02T18:07:17.746+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:07:17.748+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T18:07:17.748+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [2], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:07:17.750+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [2], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:07:17.751+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T18:07:17.751+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [3], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:07:17.751+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:07:17.751+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T18:07:17.752+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [4], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:07:17.752+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:07:17.752+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T18:07:17.752+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [5], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:07:17.752+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:07:17.752+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T18:07:17.753+03:00 TRACE 47772 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [1], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:07:17.945+03:00  INFO 47772 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T18:07:17.945+03:00  INFO 47772 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T18:07:17.945+03:00  INFO 47772 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T18:07:17.946+03:00  INFO 47772 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T18:07:17.955+03:00  INFO 47772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T18:07:17.964+03:00  INFO 47772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T18:09:08.917+03:00  INFO 79388 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Starting UserRepositoryTest using Java 19.0.2 with PID 79388 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T18:09:08.919+03:00  INFO 79388 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : The following 1 profile is active: "test"
+2024-05-02T18:09:09.345+03:00  INFO 79388 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T18:09:09.431+03:00  INFO 79388 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2024-05-02T18:09:10.041+03:00  INFO 79388 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T18:09:10.107+03:00  INFO 79388 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T18:09:10.152+03:00  INFO 79388 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T18:09:10.277+03:00  INFO 79388 --- [Test worker] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T18:09:10.470+03:00  INFO 79388 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T18:09:10.509+03:00  INFO 79388 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T18:09:10.718+03:00  INFO 79388 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12209826
+2024-05-02T18:09:10.721+03:00  INFO 79388 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T18:09:11.281+03:00  INFO 79388 --- [Test worker] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T18:09:12.323+03:00  INFO 79388 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T18:09:12.758+03:00  INFO 79388 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T18:09:12.770+03:00  INFO 79388 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T18:09:13.317+03:00  INFO 79388 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T18:09:13.701+03:00  INFO 79388 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T18:09:14.276+03:00  INFO 79388 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T18:09:14.277+03:00  INFO 79388 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T18:09:14.450+03:00  INFO 79388 --- [Test worker] c.f.s.i.d.repository.UserRepositoryTest  : Started UserRepositoryTest in 5.878 seconds (process running for 7.247)
+2024-05-02T18:09:14.635+03:00 DEBUG 79388 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing SQL batch update [UPDATE users
+SET company_id = ?,
+     role = ?
+WHERE id = ?
+]
+2024-05-02T18:09:14.636+03:00 DEBUG 79388 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users
+SET company_id = ?,
+     role = ?
+WHERE id = ?
+]
+2024-05-02T18:09:14.645+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:09:14.648+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T18:09:14.648+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [2], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:09:14.650+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [2], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:09:14.651+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T18:09:14.651+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [3], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:09:14.651+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:09:14.652+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T18:09:14.652+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [4], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:09:14.652+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:09:14.652+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T18:09:14.652+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [5], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:09:14.652+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T18:09:14.653+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T18:09:14.653+03:00 TRACE 79388 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [1], value class [java.lang.Long], SQL type unknown
+2024-05-02T18:10:13.717+03:00  WARN 79388 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s890ms529µs).
+2024-05-02T18:10:13.753+03:00  INFO 79388 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T18:10:13.754+03:00  INFO 79388 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T18:10:13.754+03:00  INFO 79388 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T18:10:13.754+03:00  INFO 79388 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T18:10:13.756+03:00  INFO 79388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T18:10:13.762+03:00  INFO 79388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -38,8 +38,7 @@ spring:
     password: 2006
     driver-class-name: org.postgresql.Driver
   jpa:
-    properties:
-      hibernate:
+    properties.hibernate:
         show_sql: true
         format_sql: true
         hbm2ddl:auto: update
