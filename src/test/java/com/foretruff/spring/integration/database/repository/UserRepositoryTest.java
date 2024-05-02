@@ -4,13 +4,12 @@ import com.foretruff.spring.database.entity.Role;
 import com.foretruff.spring.database.entity.User;
 import com.foretruff.spring.database.repository.UserRepository;
 import com.foretruff.spring.dto.UserFilter;
-import com.foretruff.spring.integration.annotation.IT;
+import com.foretruff.spring.integration.IntegrationTestBase;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.annotation.Commit;
-import org.springframework.test.context.jdbc.Sql;
 
 import java.time.LocalDate;
 
@@ -19,12 +18,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@IT
-@Sql({
-        "classpath:sql/data.sql"
-})
+//@Sql({
+//        "classpath:sql/data.sql"
+//})
 @RequiredArgsConstructor
-class UserRepositoryTest {
+class UserRepositoryTest extends IntegrationTestBase {
 
     private final UserRepository userRepository;
 
@@ -43,7 +41,6 @@ class UserRepositoryTest {
     }
 
     @Test
-    @Commit
     void checkAuditing() {
         var ivan = userRepository.findById(1L).get();
         ivan.setBirthDate(ivan.getBirthDate().plusYears(1L));

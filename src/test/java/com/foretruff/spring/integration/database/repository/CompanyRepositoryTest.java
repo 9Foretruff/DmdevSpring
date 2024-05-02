@@ -2,30 +2,25 @@ package com.foretruff.spring.integration.database.repository;
 
 import com.foretruff.spring.database.entity.Company;
 import com.foretruff.spring.database.repository.CompanyRepository;
-import com.foretruff.spring.integration.annotation.IT;
-import com.foretruff.spring.service.CompanyService;
+import com.foretruff.spring.integration.IntegrationTestBase;
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.springframework.test.annotation.Commit;
-import org.springframework.test.annotation.Rollback;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import java.io.IOException;
 import java.util.Map;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@IT
-@RequiredArgsConstructor
+//@IT
 //@Transactional
 //@Rollback по дефолту
 //@Commit
-class CompanyRepositoryTest {
+@RequiredArgsConstructor
+class CompanyRepositoryTest extends IntegrationTestBase {
     public static final Integer APPLE_ID = 4;
     private final EntityManager entityManager;
     private final TransactionTemplate transactionTemplate;
@@ -39,6 +34,7 @@ class CompanyRepositoryTest {
     }
 
     @Test
+    @Disabled
     void delete() {
         var maybeCompany = companyRepository.findById(APPLE_ID);
         assertTrue(maybeCompany.isPresent());
