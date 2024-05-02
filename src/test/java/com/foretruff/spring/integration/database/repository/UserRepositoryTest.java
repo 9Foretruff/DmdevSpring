@@ -36,7 +36,7 @@ class UserRepositoryTest {
     @Test
     void checkCustomImplementation() {
         var userFilter = new UserFilter(
-                null, "%ov%", LocalDate.now());
+                null, "ov", LocalDate.now());
 
         var users = userRepository.findAllByFilter(userFilter);
         System.out.println(users);
