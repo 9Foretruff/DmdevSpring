@@ -2042,3 +2042,713 @@ WHERE id = ?
 2024-05-02T20:25:59.173+03:00  INFO 397444 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-02T20:25:59.178+03:00  INFO 397444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-02T20:25:59.187+03:00  INFO 397444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:07:57.634+03:00  INFO 429136 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 429136 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:07:57.635+03:00  INFO 429136 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-05-02T21:07:57.978+03:00  INFO 429136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:07:58.034+03:00  INFO 429136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:07:58.570+03:00  INFO 429136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:07:58.733+03:00  INFO 429136 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e72a6cc
+2024-05-02T21:07:58.735+03:00  INFO 429136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:07:58.897+03:00  INFO 429136 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-02T21:07:59.028+03:00  INFO 429136 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-05-02T21:07:59.115+03:00  INFO 429136 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:07:59.199+03:00  INFO 429136 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:07:59.201+03:00  INFO 429136 --- [main] liquibase.command                        : Using deploymentId: 4673279201
+2024-05-02T21:07:59.203+03:00  INFO 429136 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:07:59.266+03:00  INFO 429136 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:07:59.276+03:00  INFO 429136 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::foretruff ran successfully in 48ms
+2024-05-02T21:07:59.304+03:00  INFO 429136 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:07:59.310+03:00  INFO 429136 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::foretruff ran successfully in 22ms
+2024-05-02T21:07:59.341+03:00  INFO 429136 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:07:59.347+03:00  INFO 429136 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::foretruff ran successfully in 29ms
+2024-05-02T21:07:59.368+03:00  INFO 429136 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:07:59.374+03:00  INFO 429136 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::foretruff ran successfully in 19ms
+2024-05-02T21:07:59.405+03:00  INFO 429136 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:07:59.410+03:00  INFO 429136 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::foretruff ran successfully in 28ms
+2024-05-02T21:07:59.449+03:00  INFO 429136 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:07:59.458+03:00  INFO 429136 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::foretruff ran successfully in 38ms
+2024-05-02T21:07:59.476+03:00  INFO 429136 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:07:59.481+03:00  INFO 429136 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::foretruff ran successfully in 14ms
+2024-05-02T21:07:59.492+03:00  INFO 429136 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:07:59.492+03:00  INFO 429136 --- [main] liquibase.util                           : Run:                          7
+2024-05-02T21:07:59.492+03:00  INFO 429136 --- [main] liquibase.util                           : Previously run:               0
+2024-05-02T21:07:59.492+03:00  INFO 429136 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:07:59.492+03:00  INFO 429136 --- [main] liquibase.util                           : -------------------------------
+2024-05-02T21:07:59.492+03:00  INFO 429136 --- [main] liquibase.util                           : Total change sets:            7
+2024-05-02T21:07:59.494+03:00  INFO 429136 --- [main] liquibase.util                           : Update summary generated
+2024-05-02T21:07:59.495+03:00  INFO 429136 --- [main] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:07:59.505+03:00  INFO 429136 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:07:59.508+03:00  INFO 429136 --- [main] liquibase.command                        : Command execution complete
+2024-05-02T21:07:59.587+03:00  INFO 429136 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:07:59.637+03:00  INFO 429136 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:07:59.666+03:00  INFO 429136 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:07:59.754+03:00  INFO 429136 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:07:59.878+03:00  INFO 429136 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:08:00.204+03:00  INFO 429136 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:08:00.912+03:00  INFO 429136 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:08:01.112+03:00  INFO 429136 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:08:01.117+03:00  INFO 429136 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T21:08:01.130+03:00  INFO 429136 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:08:01.301+03:00  INFO 429136 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T21:08:01.587+03:00  INFO 429136 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:08:01.588+03:00  INFO 429136 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:08:01.770+03:00  INFO 429136 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 4.533 seconds (process running for 5.275)
+2024-05-02T21:08:01.780+03:00  INFO 429136 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:08:01.781+03:00  INFO 429136 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:08:01.781+03:00  INFO 429136 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:08:01.781+03:00  INFO 429136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:08:01.782+03:00  INFO 429136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:08:01.787+03:00  INFO 429136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:15:35.574+03:00  INFO 416292 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 416292 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:15:35.575+03:00  INFO 416292 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-05-02T21:15:35.933+03:00  INFO 416292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:15:36.011+03:00  INFO 416292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:15:36.512+03:00  INFO 416292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:15:36.664+03:00  INFO 416292 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63cd2cd2
+2024-05-02T21:15:36.667+03:00  INFO 416292 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:15:36.789+03:00  INFO 416292 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-02T21:15:36.962+03:00  INFO 416292 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:15:37.042+03:00  INFO 416292 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:15:37.045+03:00  INFO 416292 --- [main] liquibase.command                        : Using deploymentId: 4673737044
+2024-05-02T21:15:37.047+03:00  INFO 416292 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:15:37.148+03:00  INFO 416292 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:15:37.155+03:00  INFO 416292 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::foretruff ran successfully in 80ms
+2024-05-02T21:15:37.190+03:00  INFO 416292 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:15:37.196+03:00  INFO 416292 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::foretruff ran successfully in 23ms
+2024-05-02T21:15:37.209+03:00  INFO 416292 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:15:37.210+03:00  INFO 416292 --- [main] liquibase.util                           : Run:                          2
+2024-05-02T21:15:37.210+03:00  INFO 416292 --- [main] liquibase.util                           : Previously run:               7
+2024-05-02T21:15:37.210+03:00  INFO 416292 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:15:37.210+03:00  INFO 416292 --- [main] liquibase.util                           : -------------------------------
+2024-05-02T21:15:37.210+03:00  INFO 416292 --- [main] liquibase.util                           : Total change sets:            9
+2024-05-02T21:15:37.210+03:00  INFO 416292 --- [main] liquibase.util                           : Update summary generated
+2024-05-02T21:15:37.212+03:00  INFO 416292 --- [main] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:15:37.222+03:00  INFO 416292 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:15:37.224+03:00  INFO 416292 --- [main] liquibase.command                        : Command execution complete
+2024-05-02T21:15:37.323+03:00  INFO 416292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:15:37.383+03:00  INFO 416292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:15:37.416+03:00  INFO 416292 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:15:37.491+03:00  INFO 416292 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:15:37.675+03:00  INFO 416292 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:15:38.032+03:00  INFO 416292 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:15:38.845+03:00  INFO 416292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:15:39.067+03:00  INFO 416292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:15:39.073+03:00  INFO 416292 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T21:15:39.077+03:00  INFO 416292 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:15:39.312+03:00  INFO 416292 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T21:15:39.713+03:00  INFO 416292 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:15:39.713+03:00  INFO 416292 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:15:39.830+03:00  INFO 416292 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 4.711 seconds (process running for 5.57)
+2024-05-02T21:15:39.842+03:00  INFO 416292 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:15:39.842+03:00  INFO 416292 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:15:39.842+03:00  INFO 416292 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:15:39.843+03:00  INFO 416292 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:15:39.844+03:00  INFO 416292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:15:39.847+03:00  INFO 416292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:19:39.281+03:00  INFO 468528 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 468528 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:19:39.283+03:00  INFO 468528 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-05-02T21:19:39.666+03:00  INFO 468528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:19:39.724+03:00  INFO 468528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:19:40.108+03:00  INFO 468528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:19:40.249+03:00  INFO 468528 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@433c6abb
+2024-05-02T21:19:40.250+03:00  INFO 468528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:19:40.358+03:00  INFO 468528 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-02T21:19:40.523+03:00  INFO 468528 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:19:40.560+03:00  INFO 468528 --- [main] liquibase.changelog                      : Change failed validation!
+2024-05-02T21:19:40.560+03:00  INFO 468528 --- [main] liquibase.command                        : Command execution complete
+2024-05-02T21:19:40.563+03:00  WARN 468528 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/db.changelog-2.1.sql::2::foretruff was: 9:31a09579336c164b9e95c9b4b91fb230 but is now: 9:654be0b93218e20d492737d2bcacba8a
+
+2024-05-02T21:19:40.563+03:00  INFO 468528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:19:40.590+03:00  INFO 468528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:19:40.598+03:00  INFO 468528 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-02T21:19:40.691+03:00 ERROR 468528 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/db.changelog-2.1.sql::2::foretruff was: 9:31a09579336c164b9e95c9b4b91fb230 but is now: 9:654be0b93218e20d492737d2bcacba8a
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.foretruff.spring.ApplicationRunner.main(ApplicationRunner.java:15) ~[main/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/db.changelog-2.1.sql::2::foretruff was: 9:31a09579336c164b9e95c9b4b91fb230 but is now: 9:654be0b93218e20d492737d2bcacba8a
+
+	at liquibase.command.CommandScope.execute(CommandScope.java:237) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:222) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:184) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:183) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:162) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1371) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:331) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:286) ~[liquibase-core-4.24.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 17 common frames omitted
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/db.changelog-2.1.sql::2::foretruff was: 9:31a09579336c164b9e95c9b4b91fb230 but is now: 9:654be0b93218e20d492737d2bcacba8a
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:353) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:214) ~[liquibase-core-4.24.0.jar:na]
+	... 29 common frames omitted
+
+2024-05-02T21:21:53.333+03:00  INFO 469400 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 469400 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:21:53.335+03:00  INFO 469400 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-05-02T21:21:53.682+03:00  INFO 469400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:21:53.747+03:00  INFO 469400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:21:54.192+03:00  INFO 469400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:21:54.401+03:00  INFO 469400 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5fbe155
+2024-05-02T21:21:54.403+03:00  INFO 469400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:21:54.510+03:00  INFO 469400 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-02T21:21:54.679+03:00  INFO 469400 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:21:54.750+03:00  INFO 469400 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:21:54.753+03:00  INFO 469400 --- [main] liquibase.command                        : Using deploymentId: 4674114753
+2024-05-02T21:21:54.756+03:00  INFO 469400 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:21:54.794+03:00  WARN 469400 --- [main] liquibase.executor                       : relation "users_aud" already exists, skipping
+2024-05-02T21:21:54.794+03:00  INFO 469400 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:21:54.796+03:00  INFO 469400 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::foretruff ran successfully in 15ms
+2024-05-02T21:21:54.813+03:00  INFO 469400 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:21:54.814+03:00  INFO 469400 --- [main] liquibase.util                           : Run:                          1
+2024-05-02T21:21:54.814+03:00  INFO 469400 --- [main] liquibase.util                           : Previously run:               8
+2024-05-02T21:21:54.814+03:00  INFO 469400 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:21:54.814+03:00  INFO 469400 --- [main] liquibase.util                           : -------------------------------
+2024-05-02T21:21:54.814+03:00  INFO 469400 --- [main] liquibase.util                           : Total change sets:            9
+2024-05-02T21:21:54.815+03:00  INFO 469400 --- [main] liquibase.util                           : Update summary generated
+2024-05-02T21:21:54.816+03:00  INFO 469400 --- [main] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:21:54.825+03:00  INFO 469400 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:21:54.827+03:00  INFO 469400 --- [main] liquibase.command                        : Command execution complete
+2024-05-02T21:21:54.913+03:00  INFO 469400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:21:54.967+03:00  INFO 469400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:21:54.995+03:00  INFO 469400 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:21:55.073+03:00  INFO 469400 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:21:55.221+03:00  INFO 469400 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:21:55.562+03:00  INFO 469400 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:21:56.353+03:00  INFO 469400 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:21:56.591+03:00  INFO 469400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:21:56.604+03:00  INFO 469400 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T21:21:56.608+03:00  INFO 469400 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:21:56.827+03:00  INFO 469400 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T21:21:57.153+03:00  INFO 469400 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:21:57.154+03:00  INFO 469400 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:21:57.278+03:00  INFO 469400 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 4.318 seconds (process running for 4.906)
+2024-05-02T21:21:57.288+03:00  INFO 469400 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:21:57.288+03:00  INFO 469400 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:21:57.288+03:00  INFO 469400 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:21:57.288+03:00  INFO 469400 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:21:57.291+03:00  INFO 469400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:21:57.295+03:00  INFO 469400 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:26:08.221+03:00  INFO 470456 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 470456 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:26:08.223+03:00  INFO 470456 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-05-02T21:26:08.616+03:00  INFO 470456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:26:08.681+03:00  INFO 470456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:26:09.064+03:00  INFO 470456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:26:09.211+03:00  INFO 470456 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5922d3e9
+2024-05-02T21:26:09.213+03:00  INFO 470456 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:26:09.334+03:00  INFO 470456 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-02T21:26:09.518+03:00  INFO 470456 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:26:09.591+03:00  INFO 470456 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:26:09.594+03:00  INFO 470456 --- [main] liquibase.command                        : Using deploymentId: 4674369593
+2024-05-02T21:26:09.596+03:00  INFO 470456 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:26:09.635+03:00  WARN 470456 --- [main] liquibase.executor                       : relation "users_aud" already exists, skipping
+2024-05-02T21:26:09.635+03:00  INFO 470456 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:09.637+03:00  INFO 470456 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::foretruff ran successfully in 15ms
+2024-05-02T21:26:09.652+03:00  INFO 470456 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:26:09.653+03:00  INFO 470456 --- [main] liquibase.util                           : Run:                          1
+2024-05-02T21:26:09.653+03:00  INFO 470456 --- [main] liquibase.util                           : Previously run:               8
+2024-05-02T21:26:09.653+03:00  INFO 470456 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:26:09.653+03:00  INFO 470456 --- [main] liquibase.util                           : -------------------------------
+2024-05-02T21:26:09.653+03:00  INFO 470456 --- [main] liquibase.util                           : Total change sets:            9
+2024-05-02T21:26:09.653+03:00  INFO 470456 --- [main] liquibase.util                           : Update summary generated
+2024-05-02T21:26:09.655+03:00  INFO 470456 --- [main] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:26:09.664+03:00  INFO 470456 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:26:09.666+03:00  INFO 470456 --- [main] liquibase.command                        : Command execution complete
+2024-05-02T21:26:09.750+03:00  INFO 470456 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:26:09.805+03:00  INFO 470456 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:26:09.835+03:00  INFO 470456 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:26:09.909+03:00  INFO 470456 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:26:10.040+03:00  INFO 470456 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:26:10.354+03:00  INFO 470456 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:26:11.141+03:00  INFO 470456 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:26:11.369+03:00  INFO 470456 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:26:11.375+03:00  INFO 470456 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T21:26:11.380+03:00  INFO 470456 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:26:11.559+03:00  INFO 470456 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T21:26:11.847+03:00  INFO 470456 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:26:11.848+03:00  INFO 470456 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:26:11.966+03:00  INFO 470456 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 4.132 seconds (process running for 4.718)
+2024-05-02T21:26:11.977+03:00  INFO 470456 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:26:11.977+03:00  INFO 470456 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:26:11.977+03:00  INFO 470456 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:26:11.978+03:00  INFO 470456 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:26:11.978+03:00  INFO 470456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:26:11.982+03:00  INFO 470456 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:26:40.867+03:00  INFO 452180 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : Starting CompanyRepositoryTest using Java 19.0.2 with PID 452180 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:26:40.869+03:00  INFO 452180 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : The following 1 profile is active: "test"
+2024-05-02T21:26:41.256+03:00  INFO 452180 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:26:41.332+03:00  INFO 452180 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:26:41.813+03:00  INFO 452180 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:26:42.012+03:00  INFO 452180 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d6778d5
+2024-05-02T21:26:42.014+03:00  INFO 452180 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:26:42.164+03:00  INFO 452180 --- [Test worker] liquibase.database                       : Set default schema name to public
+2024-05-02T21:26:42.363+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-05-02T21:26:42.393+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:26:42.504+03:00  INFO 452180 --- [Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:26:42.508+03:00  INFO 452180 --- [Test worker] liquibase.command                        : Using deploymentId: 4674402507
+2024-05-02T21:26:42.511+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:26:42.558+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.561+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::foretruff ran successfully in 21ms
+2024-05-02T21:26:42.578+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.581+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::foretruff ran successfully in 9ms
+2024-05-02T21:26:42.618+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.620+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::foretruff ran successfully in 35ms
+2024-05-02T21:26:42.631+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.633+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::foretruff ran successfully in 7ms
+2024-05-02T21:26:42.645+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.646+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::foretruff ran successfully in 8ms
+2024-05-02T21:26:42.659+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.661+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::foretruff ran successfully in 9ms
+2024-05-02T21:26:42.677+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.678+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::foretruff ran successfully in 12ms
+2024-05-02T21:26:42.690+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.692+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::foretruff ran successfully in 8ms
+2024-05-02T21:26:42.708+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:26:42.710+03:00  INFO 452180 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::foretruff ran successfully in 13ms
+2024-05-02T21:26:42.717+03:00  INFO 452180 --- [Test worker] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:26:42.718+03:00  INFO 452180 --- [Test worker] liquibase.util                           : Run:                          9
+2024-05-02T21:26:42.718+03:00  INFO 452180 --- [Test worker] liquibase.util                           : Previously run:               0
+2024-05-02T21:26:42.718+03:00  INFO 452180 --- [Test worker] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:26:42.718+03:00  INFO 452180 --- [Test worker] liquibase.util                           : -------------------------------
+2024-05-02T21:26:42.718+03:00  INFO 452180 --- [Test worker] liquibase.util                           : Total change sets:            9
+2024-05-02T21:26:42.719+03:00  INFO 452180 --- [Test worker] liquibase.util                           : Update summary generated
+2024-05-02T21:26:42.722+03:00  INFO 452180 --- [Test worker] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:26:42.728+03:00  INFO 452180 --- [Test worker] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:26:42.730+03:00  INFO 452180 --- [Test worker] liquibase.command                        : Command execution complete
+2024-05-02T21:26:42.853+03:00  INFO 452180 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:26:42.935+03:00  INFO 452180 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:26:42.977+03:00  INFO 452180 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:26:43.085+03:00  INFO 452180 --- [Test worker] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:26:43.260+03:00  INFO 452180 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:26:43.638+03:00  INFO 452180 --- [Test worker] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:26:44.601+03:00  INFO 452180 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:26:44.958+03:00 ERROR 452180 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [amount] in table [payment]; found [int4 (Types#INTEGER)], but expecting [varchar(255) (Types#VARCHAR)]
+2024-05-02T21:26:44.959+03:00  WARN 452180 --- [Test worker] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [amount] in table [payment]; found [int4 (Types#INTEGER)], but expecting [varchar(255) (Types#VARCHAR)]
+2024-05-02T21:26:44.959+03:00  INFO 452180 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:26:44.966+03:00  INFO 452180 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:26:44.974+03:00  INFO 452180 --- [Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-02T21:26:45.000+03:00 ERROR 452180 --- [Test worker] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [amount] in table [payment]; found [int4 (Types#INTEGER)], but expecting [varchar(255) (Types#VARCHAR)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.getApplicationContext(SpringExtension.java:355) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.resolveParameter(SpringExtension.java:341) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:136) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:103) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:59) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestClassConstructor(ClassBasedTestDescriptor.java:364) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateTestClass(ClassBasedTestDescriptor.java:311) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:79) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:287) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86) ~[junit-platform-launcher-1.8.2.jar:1.8.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [amount] in table [payment]; found [int4 (Types#INTEGER)], but expecting [varchar(255) (Types#VARCHAR)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 94 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: wrong column type encountered in column [amount] in table [payment]; found [int4 (Types#INTEGER)], but expecting [varchar(255) (Types#VARCHAR)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:165) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:152) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:295) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.6.jar:6.1.6]
+	... 98 common frames omitted
+
+2024-05-02T21:26:45.096+03:00  INFO 452180 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.foretruff.spring.ApplicationRunner for test class com.foretruff.spring.integration.database.repository.UserRepositoryTest
+2024-05-02T21:29:25.153+03:00  INFO 467740 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : Starting CompanyRepositoryTest using Java 19.0.2 with PID 467740 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:29:25.155+03:00  INFO 467740 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : The following 1 profile is active: "test"
+2024-05-02T21:29:25.530+03:00  INFO 467740 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:29:25.608+03:00  INFO 467740 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:29:26.156+03:00  INFO 467740 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:29:26.394+03:00  INFO 467740 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@483b7dc4
+2024-05-02T21:29:26.397+03:00  INFO 467740 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:29:26.603+03:00  INFO 467740 --- [Test worker] liquibase.database                       : Set default schema name to public
+2024-05-02T21:29:26.815+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-05-02T21:29:26.845+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:29:26.910+03:00  INFO 467740 --- [Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:29:26.912+03:00  INFO 467740 --- [Test worker] liquibase.command                        : Using deploymentId: 4674566912
+2024-05-02T21:29:26.916+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:29:26.963+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:26.966+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::foretruff ran successfully in 18ms
+2024-05-02T21:29:26.985+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:26.987+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::foretruff ran successfully in 10ms
+2024-05-02T21:29:27.002+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:27.004+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::foretruff ran successfully in 10ms
+2024-05-02T21:29:27.016+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:27.019+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::foretruff ran successfully in 8ms
+2024-05-02T21:29:27.031+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:27.033+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::foretruff ran successfully in 9ms
+2024-05-02T21:29:27.047+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:27.049+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::foretruff ran successfully in 9ms
+2024-05-02T21:29:27.067+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:27.069+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::foretruff ran successfully in 14ms
+2024-05-02T21:29:27.081+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:27.082+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::foretruff ran successfully in 7ms
+2024-05-02T21:29:27.095+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:29:27.097+03:00  INFO 467740 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::foretruff ran successfully in 8ms
+2024-05-02T21:29:27.107+03:00  INFO 467740 --- [Test worker] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:29:27.107+03:00  INFO 467740 --- [Test worker] liquibase.util                           : Run:                          9
+2024-05-02T21:29:27.107+03:00  INFO 467740 --- [Test worker] liquibase.util                           : Previously run:               0
+2024-05-02T21:29:27.108+03:00  INFO 467740 --- [Test worker] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:29:27.108+03:00  INFO 467740 --- [Test worker] liquibase.util                           : -------------------------------
+2024-05-02T21:29:27.108+03:00  INFO 467740 --- [Test worker] liquibase.util                           : Total change sets:            9
+2024-05-02T21:29:27.108+03:00  INFO 467740 --- [Test worker] liquibase.util                           : Update summary generated
+2024-05-02T21:29:27.111+03:00  INFO 467740 --- [Test worker] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:29:27.119+03:00  INFO 467740 --- [Test worker] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:29:27.122+03:00  INFO 467740 --- [Test worker] liquibase.command                        : Command execution complete
+2024-05-02T21:29:27.240+03:00  INFO 467740 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:29:27.318+03:00  INFO 467740 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:29:27.368+03:00  INFO 467740 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:29:27.479+03:00  INFO 467740 --- [Test worker] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:29:27.631+03:00  INFO 467740 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:29:27.992+03:00  INFO 467740 --- [Test worker] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:29:28.782+03:00  INFO 467740 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:29:29.116+03:00  INFO 467740 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:29:29.126+03:00  INFO 467740 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:29:29.688+03:00  INFO 467740 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T21:29:30.191+03:00  INFO 467740 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T21:29:30.884+03:00  INFO 467740 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:29:30.886+03:00  INFO 467740 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:29:31.078+03:00  INFO 467740 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : Started CompanyRepositoryTest in 6.315 seconds (process running for 12.548)
+2024-05-02T21:29:31.592+03:00  INFO 467740 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.foretruff.spring.ApplicationRunner for test class com.foretruff.spring.integration.database.repository.UserRepositoryTest
+2024-05-02T21:29:31.756+03:00  WARN 467740 --- [Test worker] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2024-05-02T21:29:31.800+03:00  WARN 467740 --- [Test worker] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2024-05-02T21:29:31.814+03:00  WARN 467740 --- [Test worker] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2024-05-02T21:29:31.995+03:00 DEBUG 467740 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing SQL batch update [UPDATE users
+SET company_id = ?,
+     role = ?
+WHERE id = ?
+]
+2024-05-02T21:29:31.999+03:00 DEBUG 467740 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users
+SET company_id = ?,
+     role = ?
+WHERE id = ?
+]
+2024-05-02T21:29:32.010+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:29:32.011+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T21:29:32.011+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [1], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:29:32.014+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:29:32.015+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:29:32.015+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [2], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:29:32.015+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [2], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:29:32.015+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:29:32.016+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [3], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:29:32.016+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:29:32.016+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:29:32.017+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [4], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:29:32.017+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:29:32.017+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T21:29:32.017+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [5], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:29:32.240+03:00 DEBUG 467740 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2024-05-02T21:29:32.240+03:00 DEBUG 467740 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [    SELECT
+    firstname,
+    lastname,
+    birth_date
+    FROM users
+    WHERE company_id = ?
+    AND role = ?
+]
+2024-05-02T21:29:32.241+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:29:32.241+03:00 TRACE 467740 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:29:32.441+03:00  INFO 467740 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:29:32.441+03:00  INFO 467740 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:29:32.442+03:00  INFO 467740 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:29:32.443+03:00  INFO 467740 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:29:32.446+03:00  INFO 467740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:29:32.454+03:00  INFO 467740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:33:23.012+03:00  INFO 460968 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : Starting CompanyRepositoryTest using Java 19.0.2 with PID 460968 (started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:33:23.013+03:00  INFO 460968 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : The following 1 profile is active: "test"
+2024-05-02T21:33:23.396+03:00  INFO 460968 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:33:23.469+03:00  INFO 460968 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:33:23.954+03:00  INFO 460968 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:33:24.145+03:00  INFO 460968 --- [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d7f2f0a
+2024-05-02T21:33:24.147+03:00  INFO 460968 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:33:24.332+03:00  INFO 460968 --- [Test worker] liquibase.database                       : Set default schema name to public
+2024-05-02T21:33:24.561+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-05-02T21:33:24.595+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:33:24.668+03:00  INFO 460968 --- [Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:33:24.671+03:00  INFO 460968 --- [Test worker] liquibase.command                        : Using deploymentId: 4674804671
+2024-05-02T21:33:24.675+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:33:24.724+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.728+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::foretruff ran successfully in 21ms
+2024-05-02T21:33:24.747+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.750+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::foretruff ran successfully in 10ms
+2024-05-02T21:33:24.765+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.767+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::foretruff ran successfully in 10ms
+2024-05-02T21:33:24.781+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.784+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::foretruff ran successfully in 9ms
+2024-05-02T21:33:24.797+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.799+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::foretruff ran successfully in 8ms
+2024-05-02T21:33:24.814+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.816+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::foretruff ran successfully in 10ms
+2024-05-02T21:33:24.835+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.836+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::foretruff ran successfully in 13ms
+2024-05-02T21:33:24.853+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.856+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::foretruff ran successfully in 11ms
+2024-05-02T21:33:24.871+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:24.874+03:00  INFO 460968 --- [Test worker] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::foretruff ran successfully in 11ms
+2024-05-02T21:33:24.883+03:00  INFO 460968 --- [Test worker] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:33:24.884+03:00  INFO 460968 --- [Test worker] liquibase.util                           : Run:                          9
+2024-05-02T21:33:24.884+03:00  INFO 460968 --- [Test worker] liquibase.util                           : Previously run:               0
+2024-05-02T21:33:24.884+03:00  INFO 460968 --- [Test worker] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:33:24.884+03:00  INFO 460968 --- [Test worker] liquibase.util                           : -------------------------------
+2024-05-02T21:33:24.884+03:00  INFO 460968 --- [Test worker] liquibase.util                           : Total change sets:            9
+2024-05-02T21:33:24.885+03:00  INFO 460968 --- [Test worker] liquibase.util                           : Update summary generated
+2024-05-02T21:33:24.893+03:00  INFO 460968 --- [Test worker] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:33:24.901+03:00  INFO 460968 --- [Test worker] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:33:24.903+03:00  INFO 460968 --- [Test worker] liquibase.command                        : Command execution complete
+2024-05-02T21:33:25.057+03:00  INFO 460968 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:33:25.142+03:00  INFO 460968 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:33:25.181+03:00  INFO 460968 --- [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:33:25.268+03:00  INFO 460968 --- [Test worker] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:33:25.415+03:00  INFO 460968 --- [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:33:25.758+03:00  INFO 460968 --- [Test worker] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:33:26.552+03:00  INFO 460968 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:33:26.871+03:00  INFO 460968 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:33:26.880+03:00  INFO 460968 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:33:27.514+03:00  INFO 460968 --- [Test worker] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T21:33:28.031+03:00  INFO 460968 --- [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T21:33:28.623+03:00  INFO 460968 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:33:28.626+03:00  INFO 460968 --- [Test worker] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:33:28.777+03:00  INFO 460968 --- [Test worker] c.f.s.i.d.r.CompanyRepositoryTest        : Started CompanyRepositoryTest in 6.102 seconds (process running for 11.925)
+2024-05-02T21:33:29.227+03:00  INFO 460968 --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.foretruff.spring.ApplicationRunner for test class com.foretruff.spring.integration.database.repository.UserRepositoryTest
+2024-05-02T21:33:29.395+03:00  WARN 460968 --- [Test worker] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2024-05-02T21:33:29.426+03:00  WARN 460968 --- [Test worker] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2024-05-02T21:33:29.440+03:00  WARN 460968 --- [Test worker] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2024-05-02T21:33:29.596+03:00 DEBUG 460968 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing SQL batch update [UPDATE users
+SET company_id = ?,
+     role = ?
+WHERE id = ?
+]
+2024-05-02T21:33:29.598+03:00 DEBUG 460968 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [UPDATE users
+SET company_id = ?,
+     role = ?
+WHERE id = ?
+]
+2024-05-02T21:33:29.606+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:33:29.607+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T21:33:29.607+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [1], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:33:29.608+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:33:29.608+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:33:29.608+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [2], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:33:29.608+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [2], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:33:29.608+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:33:29.608+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [3], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:33:29.609+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:33:29.609+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:33:29.609+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [4], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:33:29.609+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [3], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:33:29.609+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [ADMIN], value class [java.lang.String], SQL type unknown
+2024-05-02T21:33:29.609+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 3, parameter value [5], value class [java.lang.Long], SQL type unknown
+2024-05-02T21:33:29.808+03:00 DEBUG 460968 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2024-05-02T21:33:29.809+03:00 DEBUG 460968 --- [Test worker] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [    SELECT
+    firstname,
+    lastname,
+    birth_date
+    FROM users
+    WHERE company_id = ?
+    AND role = ?
+]
+2024-05-02T21:33:29.809+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 1, parameter value [1], value class [java.lang.Integer], SQL type unknown
+2024-05-02T21:33:29.809+03:00 TRACE 460968 --- [Test worker] o.s.jdbc.core.StatementCreatorUtils      : Setting SQL statement parameter value: column index 2, parameter value [USER], value class [java.lang.String], SQL type unknown
+2024-05-02T21:33:29.973+03:00  INFO 460968 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:33:29.974+03:00  INFO 460968 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:33:29.974+03:00  INFO 460968 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:33:29.975+03:00  INFO 460968 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:33:29.978+03:00  INFO 460968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:33:29.983+03:00  INFO 460968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-02T21:33:52.922+03:00  INFO 444032 --- [main] com.foretruff.spring.ApplicationRunner   : Starting ApplicationRunner using Java 19.0.2 with PID 444032 (D:\java файлы\PROJECTS\DmdevSpring\build\classes\java\main started by mi200 in D:\java файлы\PROJECTS\DmdevSpring)
+2024-05-02T21:33:52.924+03:00  INFO 444032 --- [main] com.foretruff.spring.ApplicationRunner   : No active profile set, falling back to 1 default profile: "default"
+2024-05-02T21:33:53.263+03:00  INFO 444032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-02T21:33:53.319+03:00  INFO 444032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2024-05-02T21:33:53.688+03:00  INFO 444032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-02T21:33:53.829+03:00  INFO 444032 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47406941
+2024-05-02T21:33:53.830+03:00  INFO 444032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-02T21:33:53.948+03:00  INFO 444032 --- [main] liquibase.database                       : Set default schema name to public
+2024-05-02T21:33:54.088+03:00  INFO 444032 --- [main] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2024-05-02T21:33:54.140+03:00  INFO 444032 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:33:54.291+03:00  INFO 444032 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-02T21:33:54.294+03:00  INFO 444032 --- [main] liquibase.command                        : Using deploymentId: 4674834294
+2024-05-02T21:33:54.298+03:00  INFO 444032 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-02T21:33:54.374+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.380+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::1::foretruff ran successfully in 41ms
+2024-05-02T21:33:54.407+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.413+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::2::foretruff ran successfully in 20ms
+2024-05-02T21:33:54.446+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.452+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::3::foretruff ran successfully in 30ms
+2024-05-02T21:33:54.476+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.482+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::4::foretruff ran successfully in 20ms
+2024-05-02T21:33:54.514+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.529+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::5::foretruff ran successfully in 37ms
+2024-05-02T21:33:54.565+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.572+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-1.0.sql::6::foretruff ran successfully in 30ms
+2024-05-02T21:33:54.593+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.599+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.0.sql::1::foretruff ran successfully in 17ms
+2024-05-02T21:33:54.612+03:00  WARN 444032 --- [main] liquibase.executor                       : relation "revision" already exists, skipping
+2024-05-02T21:33:54.612+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.613+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::1::foretruff ran successfully in 5ms
+2024-05-02T21:33:54.627+03:00  WARN 444032 --- [main] liquibase.executor                       : relation "users_aud" already exists, skipping
+2024-05-02T21:33:54.627+03:00  INFO 444032 --- [main] liquibase.changelog                      : Custom SQL executed
+2024-05-02T21:33:54.628+03:00  INFO 444032 --- [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-2.1.sql::2::foretruff ran successfully in 6ms
+2024-05-02T21:33:54.639+03:00  INFO 444032 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-02T21:33:54.639+03:00  INFO 444032 --- [main] liquibase.util                           : Run:                          9
+2024-05-02T21:33:54.639+03:00  INFO 444032 --- [main] liquibase.util                           : Previously run:               0
+2024-05-02T21:33:54.639+03:00  INFO 444032 --- [main] liquibase.util                           : Filtered out:                 0
+2024-05-02T21:33:54.640+03:00  INFO 444032 --- [main] liquibase.util                           : -------------------------------
+2024-05-02T21:33:54.640+03:00  INFO 444032 --- [main] liquibase.util                           : Total change sets:            9
+2024-05-02T21:33:54.640+03:00  INFO 444032 --- [main] liquibase.util                           : Update summary generated
+2024-05-02T21:33:54.641+03:00  INFO 444032 --- [main] liquibase.command                        : Update command completed successfully.
+2024-05-02T21:33:54.651+03:00  INFO 444032 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-02T21:33:54.653+03:00  INFO 444032 --- [main] liquibase.command                        : Command execution complete
+2024-05-02T21:33:54.748+03:00  INFO 444032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-02T21:33:54.812+03:00  INFO 444032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-02T21:33:54.848+03:00  INFO 444032 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-02T21:33:54.938+03:00  INFO 444032 --- [main] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2024-05-02T21:33:55.073+03:00  INFO 444032 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-02T21:33:55.369+03:00  INFO 444032 --- [main] o.h.e.c.i.m.AuditMetadataGenerator       : Adding properties for entity: com.foretruff.spring.database.entity.User
+2024-05-02T21:33:56.118+03:00  INFO 444032 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-02T21:33:56.344+03:00  INFO 444032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:33:56.350+03:00  INFO 444032 --- [main] c.f.spring.config.JpaConfiguration       : Jpa configuration is enabled
+2024-05-02T21:33:56.354+03:00  INFO 444032 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:33:56.536+03:00  INFO 444032 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-02T21:33:56.827+03:00  INFO 444032 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:33:56.828+03:00  INFO 444032 --- [main] c.f.spring.database.pool.ConnectionPool  : Init connection pool
+2024-05-02T21:33:56.929+03:00  INFO 444032 --- [main] com.foretruff.spring.ApplicationRunner   : Started ApplicationRunner in 4.392 seconds (process running for 4.934)
+2024-05-02T21:33:56.939+03:00  INFO 444032 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:33:56.939+03:00  INFO 444032 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:33:56.940+03:00  INFO 444032 --- [SpringApplicationShutdownHook] c.f.spring.database.pool.ConnectionPool  : clean connection pool
+2024-05-02T21:33:56.940+03:00  INFO 444032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-02T21:33:56.941+03:00  INFO 444032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-02T21:33:56.945+03:00  INFO 444032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
