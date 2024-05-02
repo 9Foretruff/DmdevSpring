@@ -34,7 +34,7 @@ logging:
 spring:
   mvc:
     view:
-      prefix: /WEB-INF/jsp
+      prefix: /WEB-INF/jsp/
       suffix: .jsp
   datasource:
     url: jdbc:postgresql://localhost:5438/postgres
@@ -43,8 +43,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     properties.hibernate:
-        show_sql: true
-        format_sql: true
-        hbm2ddl:auto: update
-        default_schema: public
-
+      show_sql: true
+      format_sql: true
+      hbm2ddl:auto: update
+      default_schema: public
