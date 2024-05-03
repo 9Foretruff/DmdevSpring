@@ -36,14 +36,14 @@ class CompanyServiceTest {
 
     @Test
     void findById() {
-        doReturn(Optional.of(new Company(COMPANY_ID,null, Collections.emptyMap())))
+        doReturn(Optional.of(new Company(COMPANY_ID, null, Collections.emptyMap())))
                 .when(companyRepository).findById(COMPANY_ID);
 
         var actualResult = companyService.findById(COMPANY_ID);
 
         assertTrue(actualResult.isPresent());
 
-        var expectedResult = new CompanyReadDto(COMPANY_ID);
+        var expectedResult = new CompanyReadDto(COMPANY_ID, null);
         actualResult.ifPresent(actual -> assertEquals(expectedResult, actual));
 
         verify(eventPublisher).publishEvent(any(EntityEvent.class));
