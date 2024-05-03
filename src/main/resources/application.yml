@@ -47,3 +47,4 @@ spring:
       format_sql: true
       hbm2ddl:auto: update
       default_schema: public
+    open-in-view: false
