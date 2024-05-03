@@ -36,6 +36,8 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+    format:
+      date: iso
   datasource:
     url: jdbc:postgresql://localhost:5438/postgres
     username: postgres
@@ -48,3 +50,5 @@ spring:
       hbm2ddl:auto: update
       default_schema: public
     open-in-view: false
+  gson:
+    date-format:
