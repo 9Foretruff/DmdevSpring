@@ -3,6 +3,7 @@ package com.foretruff.spring.http.contoller;
 import com.foretruff.spring.database.entity.Company;
 import com.foretruff.spring.database.entity.Role;
 import com.foretruff.spring.dto.UserCreateEditDto;
+import com.foretruff.spring.dto.UserFilter;
 import com.foretruff.spring.service.CompanyService;
 import com.foretruff.spring.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -26,9 +27,10 @@ public class UserController {
     private final CompanyService companyService;
 
     @GetMapping
-    public String findAll(Model model) {
+    public String findAll(Model model, UserFilter filter) {
 //        model.addAttribute("users", userService.findAll(filter));
-        model.addAttribute("users", userService.findAll());
+
+        model.addAttribute("users", userService.findAll(filter));
         return "user/users";
     }
 

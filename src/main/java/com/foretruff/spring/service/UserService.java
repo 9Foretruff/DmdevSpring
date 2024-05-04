@@ -2,6 +2,7 @@ package com.foretruff.spring.service;
 
 import com.foretruff.spring.database.repository.UserRepository;
 import com.foretruff.spring.dto.UserCreateEditDto;
+import com.foretruff.spring.dto.UserFilter;
 import com.foretruff.spring.dto.UserReadDto;
 import com.foretruff.spring.mapper.UserCreateEditMapper;
 import com.foretruff.spring.mapper.UserReadMapper;
@@ -20,6 +21,13 @@ public class UserService {
     private final UserRepository userRepository;
     private final UserReadMapper userReadMapper;
     private final UserCreateEditMapper userCreateEditMapper;
+
+
+    public List<UserReadDto> findAll(UserFilter filter) {
+        return userRepository.findAllByFilter(filter).stream()
+                .map(userReadMapper::map)
+                .toList();
+    }
 
     public List<UserReadDto> findAll() {
         return userRepository.findAll().stream()
