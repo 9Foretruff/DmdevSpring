@@ -1,15 +1,15 @@
 package com.foretruff.spring.http.contoller;
 
-import com.foretruff.spring.database.entity.Company;
 import com.foretruff.spring.database.entity.Role;
 import com.foretruff.spring.dto.PageResponse;
 import com.foretruff.spring.dto.UserCreateEditDto;
 import com.foretruff.spring.dto.UserFilter;
-import com.foretruff.spring.dto.UserReadDto;
 import com.foretruff.spring.service.CompanyService;
 import com.foretruff.spring.service.UserService;
+import com.foretruff.spring.validation.group.CreateAction;
+import com.foretruff.spring.validation.group.UpdateAction;
+import jakarta.validation.groups.Default;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -62,12 +62,12 @@ public class UserController {
 
     @PostMapping
 //    @ResponseStatus(HttpStatus.CREATED)
-    public String create(@ModelAttribute @Validated UserCreateEditDto user,
+    public String create(@ModelAttribute @Validated({Default.class, CreateAction.class}) UserCreateEditDto user,
                          BindingResult bindingResult,
                          RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
             redirectAttributes.addFlashAttribute("user", user);
-            redirectAttributes.addFlashAttribute("errors",bindingResult.getAllErrors());
+            redirectAttributes.addFlashAttribute("errors", bindingResult.getAllErrors());
             return "redirect:/users/registration";
         }
         return "redirect:/users/" + userService.create(user).getId();
@@ -75,7 +75,7 @@ public class UserController {
 
     //    @PutMapping("/{id}")
     @PostMapping("/{id}/update")
-    public String update(@PathVariable Long id, @ModelAttribute @Validated UserCreateEditDto user) {
+    public String update(@PathVariable Long id, @ModelAttribute @Validated({Default.class, UpdateAction.class}) UserCreateEditDto user) {
         return userService.update(id, user)
                 .map(it -> "redirect:/users/{id}")
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
