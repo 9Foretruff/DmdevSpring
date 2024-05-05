@@ -39,6 +39,7 @@ dependencies {
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation "org.testcontainers:postgresql:${versions.testcontainers}"
+    testImplementation "org.testcontainers:postgresql:${versions.testcontainers}"
 }
 
 
