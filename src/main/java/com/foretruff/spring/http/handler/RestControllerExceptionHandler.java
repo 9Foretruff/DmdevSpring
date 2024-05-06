@@ -6,6 +6,4 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @RestControllerAdvice(basePackages = "comm.foretruff.spring.http.rest")
 public class RestControllerExceptionHandler extends ResponseEntityExceptionHandler {
 
-
-
 }
