@@ -36,7 +36,13 @@ public class UserController {
     private final UserService userService;
     private final CompanyService companyService;
 
-
+    @GetMapping
+    public String findAll(Model model, UserFilter filter, Pageable pageable) {
+        var page = userService.findAll(filter, pageable);
+        model.addAttribute("users", PageResponse.of(page));
+        model.addAttribute("filter", filter);
+        return "user/users";
+    }
 
     @GetMapping("/{id}")
     public String findById(@PathVariable Long id, Model model) {
