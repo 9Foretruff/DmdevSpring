@@ -20,6 +20,11 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests((authz) -> authz
                         .anyRequest().authenticated()
                 )
+                .logout(logout -> logout
+                        .logoutUrl("/logout")
+                        .logoutSuccessUrl("/login")
+                        .deleteCookies("JSESSIONID")
+                )
 //                .httpBasic(withDefaults())
                 .formLogin(login -> login
                         .loginPage("/login")
@@ -33,7 +38,7 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
