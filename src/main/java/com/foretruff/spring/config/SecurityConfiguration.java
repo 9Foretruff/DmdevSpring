@@ -18,6 +18,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests((authz) -> authz
                         .anyRequest().authenticated()
                 )
+//                .httpBasic(withDefaults())
                 .formLogin(login -> login
                         .loginPage("/login")
                         .defaultSuccessUrl("/users")
