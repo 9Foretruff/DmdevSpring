@@ -13,6 +13,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.prepost.PostAuthorize;
+import org.springframework.security.access.prepost.PostFilter;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsPasswordService;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -38,6 +41,8 @@ public class UserService implements UserDetailsService {
     private final UserCreateEditMapper userCreateEditMapper;
     private final ImageService imageService;
 
+//    @PostFilter("filterObject.role.name.equals('ADMIN')")
+//    @PostFilter("@companyService.findById(filterObject.company.id()).isPresent()")
     public Page<UserReadDto> findAll(UserFilter filter, Pageable pageable) {
         var predicate = QPredicates.builder()
                 .add(filter.firstname(), user.firstname::containsIgnoreCase)
@@ -55,6 +60,7 @@ public class UserService implements UserDetailsService {
                 .toList();
     }
 
+    @PreAuthorize("hasAuthority('ADMIN')")
     public Optional<UserReadDto> findById(Long id) {
         return userRepository.findById(id)
                 .map(userReadMapper::map);
