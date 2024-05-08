@@ -17,6 +17,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.QueryHints;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.history.RevisionRepository;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -70,4 +71,5 @@ public interface UserRepository extends
             nativeQuery = true)
     List<PersonalInfo2> findAllByCompanyId(Integer companyId);
 
+    Optional<User> findByUsername(String username);
 }

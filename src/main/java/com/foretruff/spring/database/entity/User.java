@@ -52,6 +52,8 @@ public class User extends AuditingEntity<Long> {
     @Column(nullable = false, unique = true)
     private String username;
 
+    private String password;
+
     private LocalDate birthDate;
 
     private String firstname;
