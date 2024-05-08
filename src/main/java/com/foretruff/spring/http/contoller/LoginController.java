@@ -15,10 +15,4 @@ public class LoginController {
         return "user/login";
     }
 
-    @PostMapping("/login")
-    public String login(Model model, @ModelAttribute("login") LoginDto loginDto) {
-//        return "forward:/WEB-INF/jsp/user/login.html";
-        return "redirect:/login";
-    }
-
 }
