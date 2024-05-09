@@ -36,6 +36,9 @@ public class SecurityConfiguration {
 //                .csrf((csrf) -> csrf
 //                        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
 //                )
+                .oauth2Login(config -> config
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/users"))
         ;
         return http.build();
     }
