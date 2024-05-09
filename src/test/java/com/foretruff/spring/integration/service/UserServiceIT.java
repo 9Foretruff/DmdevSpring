@@ -6,6 +6,7 @@ import com.foretruff.spring.integration.IntegrationTestBase;
 import com.foretruff.spring.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.web.MockMultipartFile;
 
 import java.time.LocalDate;
 
@@ -40,11 +41,13 @@ public class UserServiceIT extends IntegrationTestBase {
     void create() {
         var userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "test",
                 LocalDate.now(),
                 "Maksym",
                 "Rokitko",
                 Role.ADMIN,
-                COMPANY_1
+                COMPANY_1,
+                new MockMultipartFile("test", new byte[0])
         );
         var actualResult = userService.create(userDto);
         assertAll(
@@ -61,11 +64,13 @@ public class UserServiceIT extends IntegrationTestBase {
     void update() {
         var userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "test",
                 LocalDate.now(),
                 "Maksym",
                 "Rokitko",
                 Role.ADMIN,
-                COMPANY_1
+                COMPANY_1,
+                new MockMultipartFile("test", new byte[0])
         );
 
         var actualResult = userService.update(USER_1, userDto);

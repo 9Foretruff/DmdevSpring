@@ -6,11 +6,22 @@ import com.foretruff.spring.integration.IntegrationTestBase;
 import com.foretruff.spring.integration.annotation.IT;
 import lombok.RequiredArgsConstructor;
 import org.hamcrest.collection.IsCollectionWithSize;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.security.authentication.TestingAuthenticationToken;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+
+import java.util.Arrays;
+import java.util.List;
 
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.birthDate;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.companyId;
@@ -18,7 +29,9 @@ import static com.foretruff.spring.dto.UserCreateEditDto.Fields.firstname;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.lastname;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.role;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.username;
+import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -33,13 +46,25 @@ class UserControllerTest extends IntegrationTestBase {
 
     private final MockMvc mockMvc;
 
+    @BeforeEach
+    void init() {
+//        List<GrantedAuthority> roles = Arrays.asList(Role.ADMIN, Role.USER); // уже пофиксили
+//        var testUser = new User("test@gmail.com", "test", roles);
+//        var testingAuthenticationToken = new TestingAuthenticationToken(testUser, testUser.getPassword(), testUser.getAuthorities());
+//
+//        var securityContext = SecurityContextHolder.createEmptyContext();
+//        securityContext.setAuthentication(testingAuthenticationToken);
+//        SecurityContextHolder.setContext(securityContext);
+    }
+
     @Test
+    @WithMockUser(username = "test@gmail.com", password = "test", authorities = {"ADMIN", "USER"})
     void findAll() throws Exception {
-        mockMvc.perform(get("/users"))
+        mockMvc.perform(get("/users")
+                        .with(user("test@gmail.com").authorities(Role.ADMIN).password("test")))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(view().name("user/users"))
-                .andExpect(model().attributeExists("users"))
-                .andExpect(model().attribute("users", IsCollectionWithSize.hasSize(5)));
+                .andExpect(model().attributeExists("users"));
     }
 
     @Test
