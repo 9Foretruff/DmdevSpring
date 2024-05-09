@@ -1,27 +1,13 @@
 package com.foretruff.spring.integration.http.contoller;
 
 import com.foretruff.spring.database.entity.Role;
-import com.foretruff.spring.dto.UserCreateEditDto;
 import com.foretruff.spring.integration.IntegrationTestBase;
-import com.foretruff.spring.integration.annotation.IT;
 import lombok.RequiredArgsConstructor;
-import org.hamcrest.collection.IsCollectionWithSize;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.security.authentication.TestingAuthenticationToken;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-
-import java.util.Arrays;
-import java.util.List;
 
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.birthDate;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.companyId;
@@ -29,13 +15,10 @@ import static com.foretruff.spring.dto.UserCreateEditDto.Fields.firstname;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.lastname;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.role;
 import static com.foretruff.spring.dto.UserCreateEditDto.Fields.username;
-import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrlPattern;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
