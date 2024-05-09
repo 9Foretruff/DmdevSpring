@@ -52,10 +52,3 @@ spring:
     open-in-view: false
   gson:
     date-format:
-
-  security:
-    oauth2:
-      client:
-        registration:
-          google:
-            scope: openid,email,profile
