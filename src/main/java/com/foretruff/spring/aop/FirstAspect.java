@@ -1,15 +1,13 @@
 package com.foretruff.spring.aop;
 
-import com.foretruff.spring.validation.UserInfo;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @Aspect
+@Slf4j
 @Component
 public class FirstAspect {
 
@@ -72,7 +70,12 @@ public class FirstAspect {
 
 
     @Pointcut("execution(public * com.foretruff.spring.service.*Service.findById(*))")
-    public void anyFindByIdServiceMethod(){
+    public void anyFindByIdServiceMethod() {
+    }
+
+    @Before("anyFindByIdServiceMethod()")
+    public void addLogging() {
+        log.info("invoked findById method");
     }
 
 
