@@ -64,3 +64,6 @@ springdoc:
       scopes: openid,email,profile
     oauth2-redirect-url: http://localhost:8080/swagger-ui/oauth2-redirect.html
 
+app.common.logging:
+  enabled: true
+  level: INFO
