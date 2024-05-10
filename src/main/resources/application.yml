@@ -53,6 +53,9 @@ spring:
   gson:
     date-format:
 
+  messages:
+    basename: messages
+
 springdoc:
   swagger-ui:
     oauth:
