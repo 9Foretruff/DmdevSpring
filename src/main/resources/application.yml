@@ -52,3 +52,12 @@ spring:
     open-in-view: false
   gson:
     date-format:
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: ${spring.security.oauth2.client.registration.google.client-id}
+      client-secret: ${spring.security.oauth2.client.registration.google.client-secret}
+      scopes: openid,email,profile
+    oauth2-redirect-url: http://localhost:8080/swagger-ui/oauth2-redirect.html
+
